@@ -6,7 +6,7 @@ Profiles can be used in Clash for Windows, Clash for Android and so on.
 
 1. Windows 端打开 [Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg "Fndroid/clash_for_windows_pkg") 中的 Profiles 页面；Android 端打开 [Clash](https://github.com/Kr328/ClashForAndroid "Kr328/ClashForAndroid") 中的配置页面。
 2. Windows 端可以将解压出的配置文件直接拖入 Profiles 页面导入；两端都可通过“导入”按钮导入配置文件。
-3. 或通过复制[下方](##-关于配置文件-URL "配置文件 URL")提供的链接地址进行网络导入。
+3. 或通过复制[下方](##-配置文件-URL "配置文件 URL")提供的链接地址进行网络导入。
 
 ## 配置文件及其来源
 
@@ -22,7 +22,7 @@ Profiles can be used in Clash for Windows, Clash for Android and so on.
 
 - DOMAIN,tencentcs.com,DIRECT
 
-## 关于配置文件 URL
+## 配置文件 URL
 
 - [Public from V9999](https://raw.githubusercontent.com/Shuery-Shuai/Profiles_for_Clash/main/Profiles/Pubic%20from%20V9999.yml "链接（右击后选择“复制链接”）")
 - [Public from FQD](https://raw.githubusercontent.com/Shuery-Shuai/Profiles_for_Clash/main/Profiles/Pubilc%20from%20FQD.yml "链接（右击后选择“复制链接”）")
