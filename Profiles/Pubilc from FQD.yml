@@ -5,17 +5,30 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - name: 🇺🇸 美国 CloudFlare公司CDN节点 1
+  - name: 🇺🇸 美国 1
+    type: ss
+    server: ss-13.ssrsub.one
+    port: 152
+    cipher: aes-128-gcm
+    password: dlj.tf/ssrsub
+  - name: 🇺🇸 美国 2
+    type: ss
+    server: ss-18.ssrsub.one
+    port: 1443
+    cipher: aes-128-gcm
+    password: t.me/SSRSUB
+  - name: 🇺🇸 美国 APNIC&CloudFlare公共DNS服务器 1
     type: vmess
-    server: free.milagropets.tech
-    port: 80
-    uuid: fe4b09d6-8af6-33a2-8340-d3539f8c8a4c
-    alterId: 0
+    server: 1.0.0.1
+    port: 443
+    uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94
+    alterId: 2
     cipher: auto
+    tls: true
     network: ws
-    ws-path: /ray
+    ws-path: /y284
     ws-headers:
-      Host: free.milagropets.tech
+      Host: cooa.xyz
   - name: 🇺🇸 美国 弗吉尼亚州文特山农场OVH数据中心 1
     type: ss
     server: ss.us.sshmax.net
@@ -28,12 +41,6 @@ proxies:
     port: 35294
     cipher: aes-256-gcm
     password: J9Y2ncrdPEC38gwydNFFGBna
-  - name: 北美地区 1
-    type: ss
-    server: 104.200.131.249
-    port: 33992
-    cipher: aes-256-gcm
-    password: 8n6pwAcrrv2pj6tFY2p3TbQ6
   - name: 🇬🇧 英国 社会保险安全部 1
     type: ss
     server: ss.uk.sshmax.net
@@ -46,57 +53,6 @@ proxies:
     port: 21474
     cipher: chacha20-ietf-poly1305
     password: HgCMlgbtQMxl
-  - name: 🇷🇴 罗马尼亚 1
-    type: ss
-    server: 89.46.223.239
-    port: 39772
-    cipher: aes-256-gcm
-    password: CUndSZnYsPKcu6Kj8THVMBHD
-  - name: 🇫🇮 芬兰 1
-    type: ss
-    server: 196.244.191.109
-    port: 31944
-    cipher: aes-256-gcm
-    password: aYNeKDMzYQYw4KbUbJA8Wszq
-  - name: 🇳🇴 挪威  1
-    type: ss
-    server: ss.pl.sshmax.net
-    port: 1443
-    cipher: chacha20-ietf-poly1305
-    password: M1LCZAlfz1bV
-  - name: 🇸🇬 新加坡 NewMedia数据中心 1
-    server: sg1.vless.co
-    port: 443
-    type: trojan
-    password: fastssh.com
-    sni: sg1.vless.co
-    skip-cert-verify: false
-  - name: 🇨🇦 加拿大 1
-    server: t3.ssrsub.one
-    port: 443
-    type: trojan
-    password: ssrsub
-    sni: t3.ssrsub.one
-    skip-cert-verify: false
-  - name: 🇨🇦 加拿大 2
-    type: vmess
-    server: v5.ssrsub.one
-    port: 153
-    uuid: f129b24d-1799-4b38-a73a-a808e15fb45f
-    alterId: 64
-    cipher: auto
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: n46hm52773.laowanxiang.com
-    _index: 3
-  - name: 🇨🇦 加拿大 安大略省基奇纳DataCity数据中心 1
-    server: t2.ssrsub.one
-    port: 443
-    type: trojan
-    password: ssrsub
-    sni: t2.ssrsub.one
-    skip-cert-verify: false
   - name: 🇯🇵 日本 东京Amazon数据中心 1
     server: trojan.internet-cloudflare-accelerate.tk
     port: 443
@@ -104,17 +60,56 @@ proxies:
     password: 52147717-3969-4dc9-8c18-883c8b3becfe
     sni: trojan.internet-cloudflare-accelerate.tk
     skip-cert-verify: false
-  - name: 🇨🇳 上海市 联通 1
-    type: vmess
-    server: twpro6025.azzico.space
-    port: 11554
-    uuid: 8bdd2925-7218-314b-987a-dcbb44d09852
-    alterId: 2
-    cipher: auto
-    network: ws
-    ws-path: /video
-    ws-headers:
-      Host: twpro6024.azzico.pw
+  - name: 🇷🇺 俄罗斯 西伯利亚JustHost 1
+    type: ss
+    server: ss-15.ssrsub.one
+    port: 152
+    cipher: aes-128-gcm
+    password: dlj.tf/ssrsub
+  - name: 🇷🇺 俄罗斯 西伯利亚JustHost 2
+    type: ss
+    server: ss-16.ssrsub.one
+    port: 1443
+    cipher: aes-128-gcm
+    password: t.me/SSRSUB
+  - name: 🇸🇬 新加坡 OVH 1
+    type: ss
+    server: ss.sg.sshmax.net
+    port: 57478
+    cipher: chacha20-ietf-poly1305
+    password: o4qygNrXw7cE
+  - name: 🇸🇬 新加坡 NewMedia数据中心 1
+    server: sg1.vless.co
+    port: 443
+    type: trojan
+    password: fastssh.com
+    sni: sg1.vless.co
+    skip-cert-verify: false
+  - name: 🇮🇩 印度尼西亚 1
+    type: ss
+    server: ss.id.sshmax.net
+    port: 57478
+    cipher: chacha20-ietf-poly1305
+    password: ku382YXK8cLE
+  - name: 🇨🇦 加拿大 1
+    server: t3.ssrsub.one
+    port: 8443
+    type: trojan
+    password: ssrsub
+    sni: t3.ssrsub.one
+    skip-cert-verify: false
+  - name: 🇷🇴 罗马尼亚 1
+    type: ss
+    server: 89.46.223.239
+    port: 39772
+    cipher: aes-256-gcm
+    password: CUndSZnYsPKcu6Kj8THVMBHD
+  - name: 🇳🇴 挪威 1
+    type: ss
+    server: ss.pl.sshmax.net
+    port: 1443
+    cipher: chacha20-ietf-poly1305
+    password: M1LCZAlfz1bV
 proxy-groups:
   - name: Proxies
     type: select
@@ -125,21 +120,22 @@ proxy-groups:
       - JP
       - US
       - TW
-      - 🇺🇸 美国 CloudFlare公司CDN节点 1
+      - 🇺🇸 美国 1
+      - 🇺🇸 美国 2
+      - 🇺🇸 美国 APNIC&CloudFlare公共DNS服务器 1
       - 🇺🇸 美国 弗吉尼亚州文特山农场OVH数据中心 1
       - 🇺🇸 美国 弗吉尼亚州马纳萨斯Leaseweb(WDC-01)数据中心 1
-      - 北美地区 1
       - 🇬🇧 英国 社会保险安全部 1
       - 🇬🇧 英国 社会保险安全部 2
-      - 🇷🇴 罗马尼亚 1
-      - 🇫🇮 芬兰 1
-      - 🇳🇴 挪威  1
-      - 🇸🇬 新加坡 NewMedia数据中心 1
-      - 🇨🇦 加拿大 1
-      - 🇨🇦 加拿大 2
-      - 🇨🇦 加拿大 安大略省基奇纳DataCity数据中心 1
       - 🇯🇵 日本 东京Amazon数据中心 1
-      - 🇨🇳 上海市 联通 1
+      - 🇷🇺 俄罗斯 西伯利亚JustHost 1
+      - 🇷🇺 俄罗斯 西伯利亚JustHost 2
+      - 🇸🇬 新加坡 OVH 1
+      - 🇸🇬 新加坡 NewMedia数据中心 1
+      - 🇮🇩 印度尼西亚 1
+      - 🇨🇦 加拿大 1
+      - 🇷🇴 罗马尼亚 1
+      - 🇳🇴 挪威 1
   - name: Apple
     type: select
     proxies:
@@ -182,21 +178,22 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇺🇸 美国 CloudFlare公司CDN节点 1
+      - 🇺🇸 美国 1
+      - 🇺🇸 美国 2
+      - 🇺🇸 美国 APNIC&CloudFlare公共DNS服务器 1
       - 🇺🇸 美国 弗吉尼亚州文特山农场OVH数据中心 1
       - 🇺🇸 美国 弗吉尼亚州马纳萨斯Leaseweb(WDC-01)数据中心 1
-      - 北美地区 1
       - 🇬🇧 英国 社会保险安全部 1
       - 🇬🇧 英国 社会保险安全部 2
-      - 🇷🇴 罗马尼亚 1
-      - 🇫🇮 芬兰 1
-      - 🇳🇴 挪威  1
-      - 🇸🇬 新加坡 NewMedia数据中心 1
-      - 🇨🇦 加拿大 1
-      - 🇨🇦 加拿大 2
-      - 🇨🇦 加拿大 安大略省基奇纳DataCity数据中心 1
       - 🇯🇵 日本 东京Amazon数据中心 1
-      - 🇨🇳 上海市 联通 1
+      - 🇷🇺 俄罗斯 西伯利亚JustHost 1
+      - 🇷🇺 俄罗斯 西伯利亚JustHost 2
+      - 🇸🇬 新加坡 OVH 1
+      - 🇸🇬 新加坡 NewMedia数据中心 1
+      - 🇮🇩 印度尼西亚 1
+      - 🇨🇦 加拿大 1
+      - 🇷🇴 罗马尼亚 1
+      - 🇳🇴 挪威 1
   - name: HK
     type: select
     proxies:
@@ -204,6 +201,7 @@ proxy-groups:
   - name: SG
     type: select
     proxies:
+      - 🇸🇬 新加坡 OVH 1
       - 🇸🇬 新加坡 NewMedia数据中心 1
   - name: TW
     type: select
@@ -220,7 +218,9 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 600
     proxies:
-      - 🇺🇸 美国 CloudFlare公司CDN节点 1
+      - 🇺🇸 美国 1
+      - 🇺🇸 美国 2
+      - 🇺🇸 美国 APNIC&CloudFlare公共DNS服务器 1
       - 🇺🇸 美国 弗吉尼亚州文特山农场OVH数据中心 1
       - 🇺🇸 美国 弗吉尼亚州马纳萨斯Leaseweb(WDC-01)数据中心 1
 rules:
