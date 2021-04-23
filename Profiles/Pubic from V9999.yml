@@ -5,60 +5,20 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - name: 🇺🇸 美国
-    server: free.milagropets.tech
-    port: 80
+  - name: 🇺🇸 美国 1
     type: vmess
-    uuid: fe4b09d6-8af6-33a2-8340-d3539f8c8a4c
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-path: /ray
-    ws-headers:
-      Host: free.milagropets.tech
-  - name: 🇺🇸 美国 2
-    server: nn-ssr10.feiclouddd.me
-    port: 443
-    type: vmess
-    uuid: 293c9602-981f-4766-bb56-7bebb84da721
-    alterId: 60
-    cipher: auto
-    tls: true
-    skip-cert-verify: false
-    network: ws
-    ws-path: /fgdfdsg
-    ws-headers:
-      Host: nn-ssr10.feiclouddd.me
-  - name: 🇺🇸 美国 3
-    server: nn-ssr15.feiclouddd.me
-    port: 443
-    type: vmess
-    uuid: c6b48afa-5b9c-44ab-8774-768e0a7b16c3
-    alterId: 60
-    cipher: auto
-    tls: true
-    skip-cert-verify: false
-    network: ws
-    ws-path: /asdhdfsgh
-    ws-headers:
-      Host: nn-ssr15.feiclouddd.me
-  - name: 🇺🇸 美国 4
-    server: 104.17.46.56
-    port: 443
-    type: vmess
-    uuid: 8e82a9a5-b894-4b4d-bf2e-dbf0807572aa
-    alterId: 4
-    cipher: auto
-    tls: true
-    skip-cert-verify: false
-    network: ws
-    ws-path: /ws
-    ws-headers:
-      Host: raspy-sky-9e81.roewesu.workers.dev
-  - name: 🇺🇸 美国 5
     server: 104.16.181.15
+    port: 443
+    uuid: 1a54e756-d454-45a0-aefa-e9514e1da1f1
+    alterId: 1
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /The-Great-Awakening_vws
+    ws-headers:
+      Host: vincent-jackson2021.cf
+  - name: 🇺🇸 美国 2
+    server: 104.21.239.147
     port: 443
     type: vmess
     uuid: 1a54e756-d454-45a0-aefa-e9514e1da1f1
@@ -70,32 +30,19 @@ proxies:
     ws-path: /The-Great-Awakening_vws
     ws-headers:
       Host: vincent-jackson2021.cf
-  - name: 国内中转
-    server: ru2-relay.kejibearnode.cf
-    port: 20008
-    type: vmess
-    uuid: 3647ebdb-fa25-385f-a78b-f137811e586f
-    alterId: 2
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-path: /video
-    ws-headers:
-      Host: ru2-relay.kejibearnode.cf
-  - name: 🇷🇺 俄罗斯
-    server: 2.lyqgl.club
+  - name: 🇺🇸 美国 3
+    server: 23.224.31.210
     port: 443
     type: vmess
-    uuid: 9755f5ee-df3d-4ab1-ba71-13daa8e24a65
-    alterId: 1
+    uuid: 4aa50ee1-1a3c-4ab5-8f4a-998f8ccedd06
+    alterId: 64
     cipher: auto
     tls: true
     skip-cert-verify: false
     network: ws
-    ws-path: /enohvws
+    ws-path: /path/270119141029
     ws-headers:
-      Host: 2.lyqgl.club
+      Host: www.53933374.xyz
 proxy-groups:
   - name: Proxies
     type: select
@@ -106,13 +53,9 @@ proxy-groups:
       - JP
       - US
       - TW
-      - 🇺🇸 美国
+      - 🇺🇸 美国 1
       - 🇺🇸 美国 2
       - 🇺🇸 美国 3
-      - 🇺🇸 美国 4
-      - 🇺🇸 美国 5
-      - 国内中转
-      - 🇷🇺 俄罗斯
   - name: Apple
     type: select
     proxies:
@@ -155,13 +98,9 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇺🇸 美国
+      - 🇺🇸 美国 1
       - 🇺🇸 美国 2
       - 🇺🇸 美国 3
-      - 🇺🇸 美国 4
-      - 🇺🇸 美国 5
-      - 国内中转
-      - 🇷🇺 俄罗斯
   - name: HK
     type: select
     proxies:
@@ -185,11 +124,9 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 600
     proxies:
-      - 🇺🇸 美国
+      - 🇺🇸 美国 1
       - 🇺🇸 美国 2
       - 🇺🇸 美国 3
-      - 🇺🇸 美国 4
-      - 🇺🇸 美国 5
 rules:
   - DOMAIN-SUFFIX,17gouwuba.com,REJECT
   - DOMAIN-SUFFIX,186078.com,REJECT
