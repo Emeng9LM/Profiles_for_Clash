@@ -110,6 +110,18 @@ proxies:
     port: 1443
     cipher: chacha20-ietf-poly1305
     password: M1LCZAlfz1bV
+  - name: 🇨🇳 湖北省 教育网 1
+    type: vmess
+    server: 101.36.106.58
+    port: 443
+    uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94
+    alterId: 2
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /y284
+    ws-headers:
+      Host: cooa.xyz
 proxy-groups:
   - name: Proxies
     type: select
@@ -136,6 +148,7 @@ proxy-groups:
       - 🇨🇦 加拿大 1
       - 🇷🇴 罗马尼亚 1
       - 🇳🇴 挪威 1
+      - 🇨🇳 湖北省 教育网 1
   - name: Apple
     type: select
     proxies:
@@ -194,6 +207,7 @@ proxy-groups:
       - 🇨🇦 加拿大 1
       - 🇷🇴 罗马尼亚 1
       - 🇳🇴 挪威 1
+      - 🇨🇳 湖北省 教育网 1
   - name: HK
     type: select
     proxies:
