@@ -8,13 +8,13 @@ proxies:
   - name: 🇺🇸 洛杉矶
     type: ss
     server: 88.218.92.16
-    port: "11223"
+    port: "10011"
     cipher: aes-256-ctr
     password: dongtaiwang.com 123abc
   - name: 🇷🇺 莫斯科 1
     type: ss
     server: 45.135.135.229
-    port: "11112"
+    port: "10011"
     cipher: chacha20-ietf
     password: dongtaiwang.com 123abc
   - name: 🇷🇺 莫斯科 2
@@ -23,7 +23,41 @@ proxies:
     port: "34567"
     cipher: chacha20-ietf
     password: dongtaiwang.com 123abc
-  - name: 🇺🇸 美国CloudFlare节点 1
+  - name: 🇭🇰 香港Amazon数据中心
+    type: vmess
+    server: 18.166.214.33
+    port: 80
+    uuid: cc8b49a6-577c-466e-aa6f-d941a4c37e70
+    alterId: 1
+    cipher: auto
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: pull.free.video.10010.com
+  - name: 🇨🇳 台湾省中华电信(HiNet)数据中心
+    type: vmess
+    server: 211.23.132.124
+    port: 9233
+    uuid: be58f4e4-894a-47ee-8836-cf75e74fa9c9
+    alterId: 64
+    cipher: auto
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: 211.23.132.124
+  - name: 🇺🇸 美国加利福尼亚州洛杉矶QuadraNet数据中心
+    type: vmess
+    server: qn-a-02.joker007.top
+    port: 80
+    uuid: e90c4ab7-c3f0-43b0-80f8-48b4fffec448
+    alterId: 1
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: qn-a-02.joker007.top
+  - name: 🇺🇸 美国CloudFlare节点
     type: vmess
     server: cdnde.irteyz.today
     port: 443
@@ -78,7 +112,10 @@ proxy-groups:
       - 🇺🇸 洛杉矶
       - 🇷🇺 莫斯科 1
       - 🇷🇺 莫斯科 2
-      - 🇺🇸 美国CloudFlare节点 1
+      - 🇭🇰 香港Amazon数据中心
+      - 🇨🇳 台湾省中华电信(HiNet)数据中心
+      - 🇺🇸 美国加利福尼亚州洛杉矶QuadraNet数据中心
+      - 🇺🇸 美国CloudFlare节点
       - 🇺🇸 美国CloudFlare节点 2
       - 🇺🇸 美国CloudFlare公司CDN节点
       - 🇩🇪 德国Hetzner
@@ -127,7 +164,10 @@ proxy-groups:
       - 🇺🇸 洛杉矶
       - 🇷🇺 莫斯科 1
       - 🇷🇺 莫斯科 2
-      - 🇺🇸 美国CloudFlare节点 1
+      - 🇭🇰 香港Amazon数据中心
+      - 🇨🇳 台湾省中华电信(HiNet)数据中心
+      - 🇺🇸 美国加利福尼亚州洛杉矶QuadraNet数据中心
+      - 🇺🇸 美国CloudFlare节点
       - 🇺🇸 美国CloudFlare节点 2
       - 🇺🇸 美国CloudFlare公司CDN节点
       - 🇩🇪 德国Hetzner
@@ -135,6 +175,7 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
+      - 🇭🇰 香港Amazon数据中心
   - name: SG
     type: select
     proxies:
@@ -143,6 +184,7 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
+      - 🇨🇳 台湾省中华电信(HiNet)数据中心
   - name: JP
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -155,7 +197,8 @@ proxy-groups:
     interval: 600
     proxies:
       - 🇺🇸 洛杉矶
-      - 🇺🇸 美国CloudFlare节点 1
+      - 🇺🇸 美国加利福尼亚州洛杉矶QuadraNet数据中心
+      - 🇺🇸 美国CloudFlare节点
       - 🇺🇸 美国CloudFlare节点 2
       - 🇺🇸 美国CloudFlare公司CDN节点
 rules:
