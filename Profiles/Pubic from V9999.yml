@@ -34,28 +34,24 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: false
-  - name: 🇭🇰 香港Amazon数据中心
+  - name: 🇨🇳🇭🇰 香港Amazon数据中心
+    type: vmess
     server: 18.166.214.33
     port: 80
-    type: vmess
     uuid: cc8b49a6-577c-466e-aa6f-d941a4c37e70
     alterId: 1
     cipher: auto
-    tls: false
-    skip-cert-verify: false
     network: ws
     ws-path: /
     ws-headers:
       Host: pull.free.video.10010.com
   - name: 🇨🇳 台湾省中华电信(HiNet)数据中心
+    type: vmess
     server: 211.23.132.124
     port: 9233
-    type: vmess
     uuid: be58f4e4-894a-47ee-8836-cf75e74fa9c9
     alterId: 64
     cipher: auto
-    tls: false
-    skip-cert-verify: false
     network: ws
     ws-path: /
     ws-headers:
@@ -104,7 +100,7 @@ proxy-groups:
       - 🇷🇺 莫斯科 1
       - 🇷🇺 莫斯科 2
       - 🇭🇺 匈牙利
-      - 🇭🇰 香港Amazon数据中心
+      - 🇨🇳🇭🇰 香港Amazon数据中心
       - 🇨🇳 台湾省中华电信(HiNet)数据中心
       - 🇯🇵 日本东京Linode数据中心
       - 🇺🇸 美国CloudFlare节点
@@ -151,7 +147,7 @@ proxy-groups:
       - 🇷🇺 莫斯科 1
       - 🇷🇺 莫斯科 2
       - 🇭🇺 匈牙利
-      - 🇭🇰 香港Amazon数据中心
+      - 🇨🇳🇭🇰 香港Amazon数据中心
       - 🇨🇳 台湾省中华电信(HiNet)数据中心
       - 🇯🇵 日本东京Linode数据中心
       - 🇺🇸 美国CloudFlare节点
@@ -161,7 +157,7 @@ proxy-groups:
     interval: 300
   - name: HK
     proxies:
-      - 🇭🇰 香港Amazon数据中心
+      - 🇨🇳🇭🇰 香港Amazon数据中心
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 600

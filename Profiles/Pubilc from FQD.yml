@@ -5,336 +5,442 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - name: 🇺🇸 美国 1
-    type: ss
-    server: ss-13.ssrsub.one
-    port: 152
-    cipher: aes-128-gcm
-    password: dlj.tf/ssrsub
-    _index: 0
-  - name: 🇺🇸 美国 2
-    type: ss
-    server: ss-18.ssrsub.one
-    port: 1443
-    cipher: aes-128-gcm
-    password: t.me/SSRSUB
-  - name: 🇺🇸 美国 CloudFlare节点 1
+  - name: 🇨🇳 中国广东广州移动
     type: vmess
-    server: cdnde.irteyz.today
-    port: 443
-    uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
-    alterId: 64
-    cipher: auto
-    tls: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: cdnde.irteyz.today
-  - name: 🇺🇸 美国 APNIC&CloudFlare公共DNS服务器 1
-    type: vmess
-    server: 1.0.0.1
-    port: 443
-    uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94
-    alterId: 2
-    cipher: auto
-    tls: true
-    network: ws
-    ws-path: /y284
-    ws-headers:
-      Host: cooa.xyz
-  - name: 🇺🇸 美国 弗吉尼亚州文特山农场OVH数据中心 1
-    type: ss
-    server: ss.us.sshmax.net
-    port: 57478
-    cipher: chacha20-ietf-poly1305
-    password: syCiJl3nb8OD
-  - name: 🇺🇸 美国 弗吉尼亚州马纳萨斯Leaseweb(WDC-01)数据中心 1
-    type: ss
-    server: 207.244.67.149
-    port: 35294
-    cipher: aes-256-gcm
-    password: J9Y2ncrdPEC38gwydNFFGBna
-  - name: 🇺🇸 美国 加利福尼亚州洛杉矶Amazon数据中心 1
-    type: vmess
-    server: zlunitedstates.shadows.ml
-    port: 80
-    uuid: fca60ee5-ce5f-4c50-84bc-a42f8917a968
+    server: ngzyd-1.okex-tradebot.xyz
+    port: 30004
+    uuid: bfcd0463-2f1e-4945-9d90-50037230a372
     alterId: 1
     cipher: auto
     network: ws
     ws-path: /
     ws-headers:
-      Host: zlunitedstates.shadows.ml
-  - name: 🇺🇸 美国 加利福尼亚州洛杉矶市Coperation Coloction数据中心 1
-    type: vmess
-    server: 23.224.31.202
-    port: 443
-    uuid: 28a84b69-e118-47a0-9869-f397bcc9fbbd
-    alterId: 64
-    cipher: auto
-    tls: true
-    network: ws
-    ws-path: /path/160317342506
-    ws-headers:
-      Host: 23.224.31.202
-  - name: 🇺🇸 美国 加利福尼亚州洛杉矶市Coperation Coloction数据中心 2
-    type: vmess
-    server: 23.224.164.100
-    port: 443
-    uuid: d25a6583-52ca-496f-87ae-f2275b3b0ddd
-    alterId: 64
-    cipher: auto
-    tls: true
-    network: ws
-    ws-path: /path/160317342506
-    ws-headers:
-      Host: 23.224.164.100
-  - name: 🇺🇸 美国 加利福尼亚州洛杉矶市Coperation Coloction数据中心 3
-    type: vmess
-    server: 23.225.165.242
-    port: 443
-    uuid: 34f8dd2e-55f0-4d95-bfda-714f50b6c0e1
-    alterId: 64
-    cipher: auto
-    tls: true
-    network: ws
-    ws-path: /path/160317342506
-    ws-headers:
-      Host: 23.225.165.242
-  - name: 🇺🇸 美国 科罗拉多州布隆菲尔德市Level 3通信股份有限公司 1
-    type: vmess
-    server: japan.shadows.ml
-    port: 14902
-    uuid: fca60ee5-ce5f-4c50-84bc-a42f8917a968
-    alterId: 1
-    cipher: auto
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: japan.shadows.ml
-  - name: 🇬🇧 英国 社会保险安全部 1
+      Host: ngzyd-1.okex-tradebot.xyz
+  - name: 🇨🇳 中国福建泉州电信 1
     type: ss
-    server: ss.uk.sshmax.net
-    port: 57478
-    cipher: chacha20-ietf-poly1305
-    password: HgVDIN05O6bH
-  - name: 🇬🇧 英国 社会保险安全部 2
+    server: 117.28.243.253
+    port: 8333
+    cipher: rc4-md5
+    password: passfw2xs4e!
+  - name: 🇨🇳 中国福建泉州电信 2
     type: ss
-    server: ss.de.sshmax.net
-    port: 21474
-    cipher: chacha20-ietf-poly1305
-    password: HgCMlgbtQMxl
-  - name: 🇯🇵 日本 东京Amazon数据中心 1
-    server: trojan.internet-cloudflare-accelerate.tk
-    port: 443
-    type: trojan
-    password: 52147717-3969-4dc9-8c18-883c8b3becfe
-    sni: trojan.internet-cloudflare-accelerate.tk
-    skip-cert-verify: false
-  - name: 🇯🇵 日本 东京Amazon数据中心 2
+    server: 117.28.243.248
+    port: 8333
+    cipher: rc4-md5
+    password: passfw2xs4e!
+  - name: 🇨🇳 中国福建泉州电信 3
+    type: ss
+    server: p2.22332e.com
+    port: 8333
+    cipher: rc4-md5
+    password: passfw2xs4e!
+  - name: 🇨🇳🇭🇰 中国香港腾讯云
+    type: ss
+    server: 43.128.18.186
+    port: 1010
+    cipher: aes-256-cfb
+    password: laobiao
+  - name: 🇨🇳🇹🇼 中国台湾台中中華電信
+    type: ss
+    server: 59.125.11.158
+    port: 8158
+    cipher: rc4-md5
+    password: passinfo123
+  - name: 🇷🇺 俄罗斯莫斯科
     type: vmess
-    server: 13.230.147.52
-    port: 80
-    uuid: d494263d-d317-4d74-971c-3ffc7a427c2b
-    alterId: 1
+    server: 91.245.227.135
+    port: 38166
+    uuid: 9551d4fd-610e-4bf3-9f93-1df5452c3654
+    alterId: 32
     cipher: auto
     network: ws
     ws-path: /
     ws-headers:
-      Host: 13.230.147.52
-  - name: 🇯🇵 日本 东京都Amazon数据中心 1
+      Host: 91.245.227.135
+  - name: 🇷🇺 俄罗斯车里雅宾斯克
     type: vmess
-    server: 18.183.231.117
-    port: 80
-    uuid: fca60ee5-ce5f-4c50-84bc-a42f8917a968
-    alterId: 1
-    cipher: auto
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: 18.183.231.117
-  - name: 🇰🇷 韩国 KT电信 1
-    type: vmess
-    server: irancell.myandroidplus1.ir
-    port: 80
-    uuid: 13cd5f6b-c796-aec4-ea6a-7e9fa067e9fd
-    alterId: 16
-    cipher: auto
-    network: ws
-    ws-path: /api
-    ws-headers:
-      Host: Shocket1.iranlms.ir
-  - name: 🇰🇷 韩国 KT电信 2
-    type: vmess
-    server: gzyd-zz.tsutsu.top
-    port: 56224
-    uuid: b3a32dba-55b5-405d-b173-28d1d4b539c1
+    server: 80.85.156.31
+    port: 40331
+    uuid: f3dc16e3-715c-4839-abd3-8e0c6df46064
     alterId: 0
     cipher: auto
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: gzyd-zz.tsutsu.top
-  - name: 🇷🇺 俄罗斯 西伯利亚JustHost 1
-    type: ss
-    server: ss-15.ssrsub.one
-    port: 152
-    cipher: aes-128-gcm
-    password: dlj.tf/ssrsub
-  - name: 🇷🇺 俄罗斯 西伯利亚JustHost 2
-    type: ss
-    server: ss-16.ssrsub.one
-    port: 1443
-    cipher: aes-128-gcm
-    password: t.me/SSRSUB
-  - name: 🇸🇬 新加坡 OVH 1
-    type: ss
-    server: ss.sg.sshmax.net
-    port: 57478
-    cipher: chacha20-ietf-poly1305
-    password: o4qygNrXw7cE
-  - name: 🇸🇬 新加坡 NewMedia数据中心 1
-    server: sg1.vless.co
-    port: 443
-    type: trojan
-    password: fastssh.com
-    sni: sg1.vless.co
-    skip-cert-verify: false
-  - name: 🇮🇩 印度尼西亚 1
-    type: ss
-    server: ss.id.sshmax.net
-    port: 57478
-    cipher: chacha20-ietf-poly1305
-    password: ku382YXK8cLE
-  - name: 🇨🇦 加拿大 1
-    server: t3.ssrsub.one
-    port: 8443
-    type: trojan
-    password: ssrsub
-    sni: t3.ssrsub.one
-    skip-cert-verify: false
-  - name: 🇪🇺 欧盟 1
+  - name: 🇯🇵 日本东京
     type: vmess
-    server: 45.88.179.35
-    port: 30842
-    uuid: 085e6815-e476-411a-a9a6-4e5306a1b875
-    alterId: 0
+    server: auto.freev2.top
+    port: 57222
+    uuid: 1858f387-b641-4583-b868-34f0e8f93fe9
+    alterId: 1
     cipher: auto
-  - name: 🇷🇴 罗马尼亚 1
+    _index: 8
+  - name: 🇺🇸 美国
     type: ss
-    server: 89.46.223.239
+    server: channel.napsternetvtm.dnsmy.xyz
+    port: 989
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+  - name: 🇺🇸 美国纽约纽约市 1
+    type: ss
+    server: 84.17.35.86
     port: 39772
     cipher: aes-256-gcm
     password: CUndSZnYsPKcu6Kj8THVMBHD
-  - name: 🇳🇴 挪威 1
+  - name: 🇺🇸 美国纽约纽约市 2
     type: ss
-    server: ss.pl.sshmax.net
-    port: 1443
-    cipher: chacha20-ietf-poly1305
-    password: M1LCZAlfz1bV
-  - name: 🇩🇪 德国 1
+    server: 84.17.35.118
+    port: 46642
+    cipher: aes-256-gcm
+    password: gYL83DQWXuDbxmZAVVtUTXaK
+  - name: 🇺🇸 美国科罗拉多丹佛
+    type: ss
+    server: 212.102.44.98
+    port: 41676
+    cipher: aes-256-gcm
+    password: z6pH3RyttkRWhJ5tpRyt6dYk
+  - name: 🇺🇸 美国德克萨斯达拉斯 1
+    type: ss
+    server: 185.186.245.44
+    port: 8097
+    cipher: aes-256-cfb
+    password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D
+  - name: 🇺🇸 美国德克萨斯达拉斯 2
+    type: ss
+    server: 185.186.245.44
+    port: 8099
+    cipher: aes-256-cfb
+    password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D
+  - name: 🇺🇸 美国乔治亚亚特兰大 1
+    type: ss
+    server: 198.8.92.84
+    port: 35294
+    cipher: aes-256-gcm
+    password: J9Y2ncrdPEC38gwydNFFGBna
+  - name: 🇺🇸 美国乔治亚亚特兰大 2
+    type: ss
+    server: 66.115.182.67
+    port: 39772
+    cipher: aes-256-gcm
+    password: CUndSZnYsPKcu6Kj8THVMBHD
+  - name: 🇺🇸 美国加利福尼亚洛杉矶 1
     type: vmess
-    server: unitedstates.shadows.ml
-    port: 14905
-    uuid: fca60ee5-ce5f-4c50-84bc-a42f8917a968
-    alterId: 1
-    cipher: auto
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: unitedstates.shadows.ml
-  - name: 🇮🇹 意大利 1
-    type: vmess
-    server: zljapan.shadows.ml
-    port: 80
-    uuid: fca60ee5-ce5f-4c50-84bc-a42f8917a968
-    alterId: 1
-    cipher: auto
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: zljapan.shadows.ml
-  - name: 🇮🇹 意大利 2
-    type: vmess
-    server: russia.shadows.ml
-    port: 14906
-    uuid: fca60ee5-ce5f-4c50-84bc-a42f8917a968
-    alterId: 1
-    cipher: auto
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: russia.shadows.ml
-  - name: 亚太地区 1
-    server: cmi.noten.cyou
+    server: 107.167.9.124
     port: 443
-    type: trojan
-    password: f924f95d-9356-4ed8-8177-cbbe397bc34c
-    sni: cmi.noten.cyou
-    skip-cert-verify: false
-  - name: 🇨🇳 河南省洛阳市 移动 1
-    type: vmess
-    server: singapore.shadows.ml
-    port: 14901
-    uuid: fca60ee5-ce5f-4c50-84bc-a42f8917a968
-    alterId: 1
-    cipher: auto
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: singapore.shadows.ml
-  - name: 🇨🇳 河南省洛阳市 移动 2
-    type: vmess
-    server: korea.shadows.ml
-    port: 14904
-    uuid: fca60ee5-ce5f-4c50-84bc-a42f8917a968
-    alterId: 1
-    cipher: auto
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: korea.shadows.ml
-  - name: 🇨🇳 湖北省 教育网 1
-    server: trojan-cn2-gia-hk.internet-cloudflare-accelerate.tk
-    port: 443
-    type: trojan
-    password: bd2b6f67-16f1-4132-ad67-f910e07fdfd3
-    sni: trojan-cn2-gia-hk.internet-cloudflare-accelerate.tk
-    skip-cert-verify: false
-  - name: 🇨🇳 湖北省 教育网 2
-    type: vmess
-    server: 101.36.106.58
-    port: 443
-    uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94
-    alterId: 2
+    uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724
+    alterId: 64
     cipher: auto
     tls: true
     network: ws
-    ws-path: /y284
+    ws-path: /path/310910211916
     ws-headers:
-      Host: cooa.xyz
-  - name: 🇨🇳 安徽省安庆市 联通 1
+      Host: www.17080100.xyz
+  - name: 🇺🇸 美国加利福尼亚洛杉矶 2
+    type: ss
+    server: 198.147.22.87
+    port: 33998
+    cipher: aes-256-gcm
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
+  - name: 🇺🇸 美国加利福尼亚洛杉矶 3
+    type: ss
+    server: 198.147.22.87
+    port: 34815
+    cipher: aes-256-gcm
+    password: LkFAzkzXkSCRYa2CsRdL8cGb
+  - name: 🇺🇸 美国堪萨斯欧弗兰帕克 1
+    type: ss
+    server: 143.244.56.230
+    port: 39772
+    cipher: aes-256-gcm
+    password: CUndSZnYsPKcu6Kj8THVMBHD
+  - name: 🇺🇸 美国堪萨斯欧弗兰帕克 2
+    type: ss
+    server: 143.244.57.99
+    port: 39772
+    cipher: aes-256-gcm
+    password: CUndSZnYsPKcu6Kj8THVMBHD
+  - name: 🇺🇸 美国弗吉尼亚阿什本亚马逊云
     type: vmess
-    server: in1-relay.kejibearnode.cf
-    port: 10015
-    uuid: 3647ebdb-fa25-385f-a78b-f137811e586f
-    alterId: 2
+    server: v2raylpc.herokuapp.com
+    port: 443
+    uuid: ad806487-2d26-4636-98b6-ab85cc8521f7
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: v2raylpc.herokuapp.com
+  - name: 🇺🇸 美国加利福尼亚洛杉矶Cloudradium
+    type: vmess
+    server: 23.224.30.36
+    port: 443
+    uuid: e4494518-74e8-4d6b-942a-6b332cce09ef
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /path/310910211916
+    ws-headers:
+      Host: www.01902367.xyz
+  - name: 🇨🇦 加拿大基奇纳
+    type: ss
+    server: ssr2.ssrsub.one
+    port: 57478
+    cipher: aes-256-cfb
+    password: https://dlj.tf/ssrsub
+  - name: 🇨🇦 加拿大魁北克博阿努瓦OVH
+    type: ss
+    server: 142.44.133.196
+    port: 18888
+    cipher: aes-256-cfb
+    password: c97fce048
+  - name: 🇳🇱 荷兰
+    type: ss
+    server: 45.130.137.26
+    port: 39772
+    cipher: aes-256-gcm
+    password: CUndSZnYsPKcu6Kj8THVMBHD
+  - name: 🇳🇱 荷兰哈勒姆
+    type: vmess
+    server: 51.15.113.164
+    port: 80
+    uuid: 7512e0f4-05b3-4b97-8972-d3fea44cf452
+    alterId: 64
     cipher: auto
     network: ws
-    ws-path: /video
+    ws-path: /sshocean
     ws-headers:
-      Host: in1-relay.kejibearnode.cf
-  - name: 🇨🇳 安徽省安庆市 联通 2
+      Host: 51.15.113.164
+  - name: 🇳🇱 荷兰阿姆斯特丹 1
     type: vmess
-    server: jp2-relay.kejibearnode.cf
-    port: 12675
-    uuid: 3647ebdb-fa25-385f-a78b-f137811e586f
-    alterId: 2
+    server: 46.182.107.154
+    port: 443
+    uuid: 130c9f2e-42b1-4ebf-b345-e26456a061f9
+    alterId: 64
     cipher: auto
+    tls: true
     network: ws
-    ws-path: /video
+    ws-path: /footers
     ws-headers:
-      Host: jp2-relay.kejibearnode.cf
+      Host: www.05222027.xyz
+  - name: 🇳🇱 荷兰阿姆斯特丹 2
+    type: vmess
+    server: 46.182.107.165
+    port: 443
+    uuid: d3133484-f2bf-4b0c-8d38-f8e645b65687
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.07890885.xyz
+  - name: 🇳🇱 荷兰阿姆斯特丹 3
+    type: vmess
+    server: 46.182.107.36
+    port: 443
+    uuid: 65ea6727-4461-47a7-a5c4-fef2c67f2f79
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.09462550.xyz
+  - name: 🇳🇱 荷兰阿姆斯特丹 4
+    type: vmess
+    server: 5.180.79.11
+    port: 27449
+    uuid: 0cd64346-cd8d-4306-c256-05e12c76d5a5
+    alterId: 64
+    cipher: auto
+  - name: 🇳🇱 荷兰阿姆斯特丹 5
+    type: vmess
+    server: 46.182.107.94
+    port: 443
+    uuid: 743bdc87-1dea-41bf-aa0b-51dfbbfec8aa
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.54872833.xyz
+  - name: 🇳🇱 荷兰阿姆斯特丹 6
+    type: vmess
+    server: 46.182.107.146
+    port: 443
+    uuid: 418048af-a293-4b99-9b0c-98ca4690dd24
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.44590130.xyz
+  - name: 🇳🇱 荷兰阿姆斯特丹 7
+    type: vmess
+    server: 46.182.107.157
+    port: 443
+    uuid: 20b30916-e203-412e-8ec0-900f3acd5128
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.73345741.xyz
+  - name: 🇳🇱 荷兰阿姆斯特丹 8
+    type: vmess
+    server: 46.182.107.93
+    port: 443
+    uuid: 743bdc87-1dea-41bf-aa0b-51dfbbfec8aa
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.54872833.xyz
+  - name: 🇳🇱 荷兰阿姆斯特丹 9
+    type: vmess
+    server: 46.182.107.39
+    port: 443
+    uuid: d3133484-f2bf-4b0c-8d38-f8e645b65687
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.07890885.xyz
+  - name: 🇳🇱 荷兰阿姆斯特丹 10
+    type: vmess
+    server: 46.182.107.25
+    port: 443
+    uuid: 0a1ab3bd-0431-4da8-ad8a-238367ce4efc
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /path/310910211916
+    ws-headers:
+      Host: www.11300814.xyz
+  - name: 🇳🇱 荷兰阿姆斯特丹 11
+    type: vmess
+    server: 46.182.107.37
+    port: 443
+    uuid: 65ea6727-4461-47a7-a5c4-fef2c67f2f79
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.09462550.xyz
+  - name: 🇩🇪 德国法兰克福亚马逊云
+    type: vmess
+    server: 18.193.122.123
+    port: 25275
+    uuid: eebfe76a-c71f-49e4-f983-983384d5dadf
+    alterId: 64
+    cipher: auto
+  - name: 🇬🇧 英国
+    type: vmess
+    server: 5.183.102.142
+    port: 14420
+    uuid: 9984501d-e80a-4144-c6bd-2503fb49872d
+    alterId: 64
+    cipher: auto
+  - name: 🇪🇸 西班牙
+    type: vmess
+    server: 5.183.103.196
+    port: 57801
+    uuid: 337ae850-ba0b-4647-e9b7-a222dc09b0dc
+    alterId: 64
+    cipher: auto
+  - name: 🇳🇿 新西兰
+    type: ss
+    server: 124.150.139.125
+    port: 31944
+    cipher: aes-256-gcm
+    password: aYNeKDMzYQYw4KbUbJA8Wszq
+  - name: 🇦🇺 澳大利亚新南威尔士悉尼
+    type: ss
+    server: 45.77.48.44
+    port: 8099
+    cipher: aes-256-cfb
+    password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D
+  - name: 🇦🇺 澳大利亚昆士兰布里斯班
+    type: ss
+    server: 144.48.39.11
+    port: 39772
+    cipher: aes-256-gcm
+    password: CUndSZnYsPKcu6Kj8THVMBHD
+  - name: 🇦🇺 澳大利亚维多利亚墨尔本
+    type: ss
+    server: 144.48.38.149
+    port: 35294
+    cipher: aes-256-gcm
+    password: J9Y2ncrdPEC38gwydNFFGBna
+  - name: 🇦🇺 澳大利亚南澳大利亚阿德莱德 1
+    type: ss
+    server: 45.248.79.35
+    port: 37473
+    cipher: aes-256-gcm
+    password: enctdKyJfSu76VqznKwTt6Ap
+  - name: 🇦🇺 澳大利亚南澳大利亚阿德莱德 2
+    type: ss
+    server: 45.248.79.37
+    port: 39772
+    cipher: aes-256-gcm
+    password: CUndSZnYsPKcu6Kj8THVMBHD
+  - name: 🇧🇪 比利时 1
+    server: 193.9.114.34
+    port: 443
+    type: trojan
+    password: 91dc08d3-6e5e-4293-a660-b9Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8
+    skip-cert-verify: false
+  - name: 🇧🇪 比利时 2
+    server: 193.9.114.34
+    port: 443
+    type: trojan
+    password: i1wb2x5MTMwNTpHIXlCd1BXSDNWYW8
+    skip-cert-verify: false
+  - name: 🇧🇪 比利时 3
+    server: 193.9.114.34
+    port: 443
+    type: trojan
+    password: V0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8
+    skip-cert-verify: false
+  - name: 🇧🇪 比利时 4
+    server: 193.9.114.34
+    port: 443
+    type: trojan
+    password: 4a9fd9c8-3f23Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8
+    skip-cert-verify: false
+  - name: 🇧🇪 比利时 5
+    server: 193.9.114.34
+    port: 443
+    type: trojan
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8
+    skip-cert-verify: false
+  - name: 🇧🇪 比利时 6
+    server: 193.9.114.34
+    port: 443
+    type: trojan
+    password: 4aY2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8
+    skip-cert-verify: false
+  - name: 🇧🇪 比利时 7
+    server: 193.9.114.34
+    port: 443
+    type: trojan
+    password: 4a9Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8
+    skip-cert-verify: false
+  - name: 🇧🇪 比利时 8
+    server: 193.9.114.34
+    port: 443
+    type: trojan
+    password: 167daeca-a71f-4923-8ea7-b716cbaY2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8
+    skip-cert-verify: false
 proxy-groups:
   - name: Proxies
     type: select
@@ -345,43 +451,61 @@ proxy-groups:
       - JP
       - US
       - TW
-      - 🇺🇸 美国 1
-      - 🇺🇸 美国 2
-      - 🇺🇸 美国 CloudFlare节点 1
-      - 🇺🇸 美国 APNIC&CloudFlare公共DNS服务器 1
-      - 🇺🇸 美国 弗吉尼亚州文特山农场OVH数据中心 1
-      - 🇺🇸 美国 弗吉尼亚州马纳萨斯Leaseweb(WDC-01)数据中心 1
-      - 🇺🇸 美国 加利福尼亚州洛杉矶Amazon数据中心 1
-      - 🇺🇸 美国 加利福尼亚州洛杉矶市Coperation Coloction数据中心 1
-      - 🇺🇸 美国 加利福尼亚州洛杉矶市Coperation Coloction数据中心 2
-      - 🇺🇸 美国 加利福尼亚州洛杉矶市Coperation Coloction数据中心 3
-      - 🇺🇸 美国 科罗拉多州布隆菲尔德市Level 3通信股份有限公司 1
-      - 🇬🇧 英国 社会保险安全部 1
-      - 🇬🇧 英国 社会保险安全部 2
-      - 🇯🇵 日本 东京Amazon数据中心 1
-      - 🇯🇵 日本 东京Amazon数据中心 2
-      - 🇯🇵 日本 东京都Amazon数据中心 1
-      - 🇰🇷 韩国 KT电信 1
-      - 🇰🇷 韩国 KT电信 2
-      - 🇷🇺 俄罗斯 西伯利亚JustHost 1
-      - 🇷🇺 俄罗斯 西伯利亚JustHost 2
-      - 🇸🇬 新加坡 OVH 1
-      - 🇸🇬 新加坡 NewMedia数据中心 1
-      - 🇮🇩 印度尼西亚 1
-      - 🇨🇦 加拿大 1
-      - 🇪🇺 欧盟 1
-      - 🇷🇴 罗马尼亚 1
-      - 🇳🇴 挪威 1
-      - 🇩🇪 德国 1
-      - 🇮🇹 意大利 1
-      - 🇮🇹 意大利 2
-      - 亚太地区 1
-      - 🇨🇳 河南省洛阳市 移动 1
-      - 🇨🇳 河南省洛阳市 移动 2
-      - 🇨🇳 湖北省 教育网 1
-      - 🇨🇳 湖北省 教育网 2
-      - 🇨🇳 安徽省安庆市 联通 1
-      - 🇨🇳 安徽省安庆市 联通 2
+      - 🇨🇳 中国广东广州移动
+      - 🇨🇳 中国福建泉州电信 1
+      - 🇨🇳 中国福建泉州电信 2
+      - 🇨🇳 中国福建泉州电信 3
+      - 🇨🇳🇭🇰 中国香港腾讯云
+      - 🇨🇳🇹🇼 中国台湾台中中華電信
+      - 🇷🇺 俄罗斯莫斯科
+      - 🇷🇺 俄罗斯车里雅宾斯克
+      - 🇯🇵 日本东京
+      - 🇺🇸 美国
+      - 🇺🇸 美国纽约纽约市 1
+      - 🇺🇸 美国纽约纽约市 2
+      - 🇺🇸 美国德克萨斯达拉斯 1
+      - 🇺🇸 美国德克萨斯达拉斯 2
+      - 🇺🇸 美国乔治亚亚特兰大 1
+      - 🇺🇸 美国乔治亚亚特兰大 2
+      - 🇺🇸 美国加利福尼亚洛杉矶 1
+      - 🇺🇸 美国加利福尼亚洛杉矶 2
+      - 🇺🇸 美国加利福尼亚洛杉矶 3
+      - 🇺🇸 美国堪萨斯欧弗兰帕克 1
+      - 🇺🇸 美国堪萨斯欧弗兰帕克 2
+      - 🇺🇸 美国弗吉尼亚阿什本亚马逊云
+      - 🇺🇸 美国加利福尼亚洛杉矶Cloudradium
+      - 🇨🇦 加拿大基奇纳
+      - 🇨🇦 加拿大魁北克博阿努瓦OVH
+      - 🇳🇱 荷兰
+      - 🇳🇱 荷兰哈勒姆
+      - 🇳🇱 荷兰阿姆斯特丹 1
+      - 🇳🇱 荷兰阿姆斯特丹 2
+      - 🇳🇱 荷兰阿姆斯特丹 3
+      - 🇳🇱 荷兰阿姆斯特丹 4
+      - 🇳🇱 荷兰阿姆斯特丹 5
+      - 🇳🇱 荷兰阿姆斯特丹 6
+      - 🇳🇱 荷兰阿姆斯特丹 7
+      - 🇳🇱 荷兰阿姆斯特丹 8
+      - 🇳🇱 荷兰阿姆斯特丹 9
+      - 🇳🇱 荷兰阿姆斯特丹 10
+      - 🇳🇱 荷兰阿姆斯特丹 11
+      - 🇩🇪 德国法兰克福亚马逊云
+      - 🇬🇧 英国
+      - 🇪🇸 西班牙
+      - 🇳🇿 新西兰
+      - 🇦🇺 澳大利亚新南威尔士悉尼
+      - 🇦🇺 澳大利亚昆士兰布里斯班
+      - 🇦🇺 澳大利亚维多利亚墨尔本
+      - 🇦🇺 澳大利亚南澳大利亚阿德莱德 1
+      - 🇦🇺 澳大利亚南澳大利亚阿德莱德 2
+      - 🇧🇪 比利时 1
+      - 🇧🇪 比利时 2
+      - 🇧🇪 比利时 3
+      - 🇧🇪 比利时 4
+      - 🇧🇪 比利时 5
+      - 🇧🇪 比利时 6
+      - 🇧🇪 比利时 7
+      - 🇧🇪 比利时 8
   - name: Apple
     type: select
     proxies:
@@ -424,80 +548,100 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇺🇸 美国 1
-      - 🇺🇸 美国 2
-      - 🇺🇸 美国 CloudFlare节点 1
-      - 🇺🇸 美国 APNIC&CloudFlare公共DNS服务器 1
-      - 🇺🇸 美国 弗吉尼亚州文特山农场OVH数据中心 1
-      - 🇺🇸 美国 弗吉尼亚州马纳萨斯Leaseweb(WDC-01)数据中心 1
-      - 🇺🇸 美国 加利福尼亚州洛杉矶Amazon数据中心 1
-      - 🇺🇸 美国 加利福尼亚州洛杉矶市Coperation Coloction数据中心 1
-      - 🇺🇸 美国 加利福尼亚州洛杉矶市Coperation Coloction数据中心 2
-      - 🇺🇸 美国 加利福尼亚州洛杉矶市Coperation Coloction数据中心 3
-      - 🇺🇸 美国 科罗拉多州布隆菲尔德市Level 3通信股份有限公司 1
-      - 🇬🇧 英国 社会保险安全部 1
-      - 🇬🇧 英国 社会保险安全部 2
-      - 🇯🇵 日本 东京Amazon数据中心 1
-      - 🇯🇵 日本 东京Amazon数据中心 2
-      - 🇯🇵 日本 东京都Amazon数据中心 1
-      - 🇰🇷 韩国 KT电信 1
-      - 🇰🇷 韩国 KT电信 2
-      - 🇷🇺 俄罗斯 西伯利亚JustHost 1
-      - 🇷🇺 俄罗斯 西伯利亚JustHost 2
-      - 🇸🇬 新加坡 OVH 1
-      - 🇸🇬 新加坡 NewMedia数据中心 1
-      - 🇮🇩 印度尼西亚 1
-      - 🇨🇦 加拿大 1
-      - 🇪🇺 欧盟 1
-      - 🇷🇴 罗马尼亚 1
-      - 🇩🇪 德国 1
-      - 🇳🇴 挪威 1
-      - 🇮🇹 意大利 1
-      - 🇮🇹 意大利 2
-      - 亚太地区 1
-      - 🇨🇳 河南省洛阳市 移动 1
-      - 🇨🇳 河南省洛阳市 移动 2
-      - 🇨🇳 湖北省 教育网 1
-      - 🇨🇳 湖北省 教育网 2
-      - 🇨🇳 安徽省安庆市 联通 1
-      - 🇨🇳 安徽省安庆市 联通 2
+      - 🇨🇳🇭🇰 中国香港腾讯云
+      - 🇨🇳🇹🇼 中国台湾台中中華電信
+      - 🇷🇺 俄罗斯莫斯科
+      - 🇷🇺 俄罗斯车里雅宾斯克
+      - 🇯🇵 日本东京
+      - 🇺🇸 美国
+      - 🇺🇸 美国纽约纽约市 1
+      - 🇺🇸 美国纽约纽约市 2
+      - 🇺🇸 美国德克萨斯达拉斯 1
+      - 🇺🇸 美国德克萨斯达拉斯 2
+      - 🇺🇸 美国乔治亚亚特兰大 1
+      - 🇺🇸 美国乔治亚亚特兰大 2
+      - 🇺🇸 美国加利福尼亚洛杉矶 1
+      - 🇺🇸 美国加利福尼亚洛杉矶 2
+      - 🇺🇸 美国加利福尼亚洛杉矶 3
+      - 🇺🇸 美国堪萨斯欧弗兰帕克 1
+      - 🇺🇸 美国堪萨斯欧弗兰帕克 2
+      - 🇺🇸 美国弗吉尼亚阿什本亚马逊云
+      - 🇺🇸 美国加利福尼亚洛杉矶Cloudradium
+      - 🇨🇦 加拿大基奇纳
+      - 🇨🇦 加拿大魁北克博阿努瓦OVH
+      - 🇳🇱 荷兰
+      - 🇳🇱 荷兰哈勒姆
+      - 🇳🇱 荷兰阿姆斯特丹 1
+      - 🇳🇱 荷兰阿姆斯特丹 2
+      - 🇳🇱 荷兰阿姆斯特丹 3
+      - 🇳🇱 荷兰阿姆斯特丹 4
+      - 🇳🇱 荷兰阿姆斯特丹 5
+      - 🇳🇱 荷兰阿姆斯特丹 6
+      - 🇳🇱 荷兰阿姆斯特丹 7
+      - 🇳🇱 荷兰阿姆斯特丹 8
+      - 🇳🇱 荷兰阿姆斯特丹 9
+      - 🇳🇱 荷兰阿姆斯特丹 10
+      - 🇳🇱 荷兰阿姆斯特丹 11
+      - 🇩🇪 德国法兰克福亚马逊云
+      - 🇬🇧 英国
+      - 🇪🇸 西班牙
+      - 🇳🇿 新西兰
+      - 🇦🇺 澳大利亚新南威尔士悉尼
+      - 🇦🇺 澳大利亚昆士兰布里斯班
+      - 🇦🇺 澳大利亚维多利亚墨尔本
+      - 🇦🇺 澳大利亚南澳大利亚阿德莱德 1
+      - 🇦🇺 澳大利亚南澳大利亚阿德莱德 2
+      - 🇧🇪 比利时 1
+      - 🇧🇪 比利时 2
+      - 🇧🇪 比利时 3
+      - 🇧🇪 比利时 4
+      - 🇧🇪 比利时 5
+      - 🇧🇪 比利时 6
+      - 🇧🇪 比利时 7
+      - 🇧🇪 比利时 8
   - name: HK
-    type: select
     proxies:
-      - DIRECT
+      - 🇨🇳🇭🇰 中国香港腾讯云
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 600
   - name: SG
-    type: select
-    proxies:
-      - 🇸🇬 新加坡 OVH 1
-      - 🇸🇬 新加坡 NewMedia数据中心 1
-  - name: TW
-    type: select
     proxies:
       - DIRECT
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+  - name: TW
+    proxies:
+      - 🇨🇳🇹🇼 中国台湾台中中華電信
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 600
   - name: JP
+    proxies:
+      - 🇯🇵 日本东京
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 600
-    proxies:
-      - 🇯🇵 日本 东京Amazon数据中心 1
-      - 🇯🇵 日本 东京Amazon数据中心 2
-      - 🇯🇵 日本 东京都Amazon数据中心 1
   - name: US
+    proxies:
+      - 🇺🇸 美国
+      - 🇺🇸 美国纽约纽约市 1
+      - 🇺🇸 美国纽约纽约市 2
+      - 🇺🇸 美国德克萨斯达拉斯 1
+      - 🇺🇸 美国德克萨斯达拉斯 2
+      - 🇺🇸 美国乔治亚亚特兰大 1
+      - 🇺🇸 美国乔治亚亚特兰大 2
+      - 🇺🇸 美国加利福尼亚洛杉矶 1
+      - 🇺🇸 美国加利福尼亚洛杉矶 2
+      - 🇺🇸 美国加利福尼亚洛杉矶 3
+      - 🇺🇸 美国堪萨斯欧弗兰帕克 1
+      - 🇺🇸 美国堪萨斯欧弗兰帕克 2
+      - 🇺🇸 美国弗吉尼亚阿什本亚马逊云
+      - 🇺🇸 美国加利福尼亚洛杉矶Cloudradium
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 600
-    proxies:
-      - 🇺🇸 美国 1
-      - 🇺🇸 美国 2
-      - 🇺🇸 美国 CloudFlare节点 1
-      - 🇺🇸 美国 APNIC&CloudFlare公共DNS服务器 1
-      - 🇺🇸 美国 弗吉尼亚州文特山农场OVH数据中心 1
-      - 🇺🇸 美国 弗吉尼亚州马纳萨斯Leaseweb(WDC-01)数据中心 1
-      - 🇺🇸 美国 加利福尼亚州洛杉矶Amazon数据中心 1
-      - 🇺🇸 美国 加利福尼亚州洛杉矶市Coperation Coloction数据中心 1
-      - 🇺🇸 美国 加利福尼亚州洛杉矶市Coperation Coloction数据中心 2
-      - 🇺🇸 美国 加利福尼亚州洛杉矶市Coperation Coloction数据中心 3
-      - 🇺🇸 美国 科罗拉多州布隆菲尔德市Level 3通信股份有限公司 1
 rules:
   - DOMAIN-SUFFIX,17gouwuba.com,REJECT
   - DOMAIN-SUFFIX,186078.com,REJECT
