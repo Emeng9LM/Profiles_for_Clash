@@ -21,7 +21,7 @@
    ![Clash for Windows-本地导入-通过 Import 按钮导入-定位 Profiles 文件夹](Pictures/Clash_for_Windows-本地导入-通过_Import_按钮导入-定位_Profiles_文件夹.png "Clash for Windows-本地导入-通过 Import 按钮导入-定位 Profiles 文件夹")
 4. 选中配置文件并打开
    ![Clash for Windows-本地导入-通过 Import 按钮导入-选中配置文件并打开](Pictures/Clash_for_Windows-本地导入-通过_Import_按钮导入-选中配置文件并打开.png "Clash for Windows-本地导入-通过 Import 按钮导入-选中配置文件并打开")
-   > **注意**：本操作**不支持多选**，如有多个文件需**重复 2-4 步**。
+   > **注意**：本操作**不支持多选**，如有多个文件需**重复 2 ~ 4 步**。
 5. 导入成功
    ![Clash for Windows-本地导入-通过 Import 按钮导入-导入成功](Pictures/Clash_for_Windows-本地导入-通过_Import_按钮导入-导入成功.png "Clash for Windows-本地导入-通过 Import 按钮导入-导入成功")
 
@@ -45,12 +45,14 @@
 “Public from FQD”来自 [翻墙党](https://fanqiangdang.com "翻墙论坛 | 翻墙党社区 -  Powered by Discuz!") 在群组 [SS 节点公益发放](https://t.me/ssList "Telegram@ssList")、[SSR 节点免费发放](https://t.me/ssrList "Telegram@ssrList")、[V2ray,Vmess 节点免费发放](https://t.me/V2List "Telegram@V2List")中的分享。
 
 > **提示**：本项目所有配置均通过 [tiny2013](https://github.com/tindy2013 "Github@tindy2013 (Tindy X)") 开发的 [subconverter](https://github.com/tindy2013/subconverter "tindy2013/subconverter: Utility to convert between various subscription format.") 自动生成。
+>
 > **警告**：本项目配置均来自网络，使用时请遵守当地法律法规。若有侵权，请提出，会尽快删除。
 
 ## 建议添加规则
 
 ```yaml
-- DOMAIN,tencentcs.com,DIRECT # 腾讯云
+rules:
+  - DOMAIN,tencentcs.com,DIRECT # 腾讯云
 ```
 
 ## 配置文件链接
