@@ -5,85 +5,27 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - name: 🇷🇺 莫斯科 1
-    server: 45.135.135.229
-    port: 20033
-    type: ssr
-    cipher: chacha20-ietf
-    password: dongtaiwang.com 123abc
-    protocol: auth_sha1_v4
-    obfs: plain
-    protocol-param: ""
-    obfs-param: ""
+  - name: 🇷🇺 莫斯科
+    server: 45.147.200.214
+    port: 16688
+    type: ss
+    cipher: aes-256-gcm
+    password: dongtaiwang.com
   - name: 🇷🇺 莫斯科 2
-    server: 85.117.234.184
-    port: 20033
-    type: ssr
-    cipher: chacha20-ietf
-    password: dongtaiwang.com 123abc
-    protocol: auth_sha1_v4
-    obfs: plain
-    protocol-param: ""
-    obfs-param: ""
-  - name: 🇭🇺 匈牙利
-    server: 185.225.69.134
-    port: 45081
+    server: 46.17.43.179
+    port: 26010
     type: vmess
-    uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9
-    alterId: 64
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇨🇳🇭🇰 香港Amazon数据中心
-    type: vmess
-    server: 18.166.214.33
-    port: 80
-    uuid: cc8b49a6-577c-466e-aa6f-d941a4c37e70
-    alterId: 1
-    cipher: auto
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: pull.free.video.10010.com
-  - name: 🇨🇳 台湾省中华电信(HiNet)数据中心
-    type: vmess
-    server: 211.23.132.124
-    port: 9233
-    uuid: be58f4e4-894a-47ee-8836-cf75e74fa9c9
-    alterId: 64
-    cipher: auto
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: 211.23.132.124
-  - name: 🇯🇵 日本东京Linode数据中心
-    server: auto.freev2.top
-    port: 21866
-    type: vmess
-    uuid: 48a92cf0-e7ae-48bf-ba48-8894c6470aee
-    alterId: 1
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇺🇸 美国CloudFlare节点
-    server: euserv9p.ezddns.tk
-    port: 80
-    type: vmess
-    uuid: ca870483-fa7d-4f64-983a-6ed455143aca
+    uuid: 6d201803-0972-472b-b2a8-0667340281a3
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: false
-    network: ws
-    ws-path: /live
-    ws-headers:
-      Host: euserv9p.ezddns.tk
-  - name: 🇩🇪 德国Hetzner
-    server: 138.201.150.52
-    port: 33957
+  - name: 🇺🇸 圣何塞
+    server: 198.200.51.37
+    port: 53273
     type: vmess
-    uuid: 89cee221-b06c-46c5-f0d7-4fd3f4740b97
-    alterId: 64
+    uuid: b92a7868-0bf1-11ec-b252-00163cdca817
+    alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: false
@@ -97,14 +39,9 @@ proxy-groups:
       - JP
       - US
       - TW
-      - 🇷🇺 莫斯科 1
+      - 🇷🇺 莫斯科
       - 🇷🇺 莫斯科 2
-      - 🇭🇺 匈牙利
-      - 🇨🇳🇭🇰 香港Amazon数据中心
-      - 🇨🇳 台湾省中华电信(HiNet)数据中心
-      - 🇯🇵 日本东京Linode数据中心
-      - 🇺🇸 美国CloudFlare节点
-      - 🇩🇪 德国Hetzner
+      - 🇺🇸 圣何塞
   - name: Apple
     type: select
     proxies:
@@ -136,55 +73,44 @@ proxy-groups:
       - DIRECT
       - Proxies
   - name: StreamingSE
+    type: select
     proxies:
       - DIRECT
       - Proxies
       - HK
       - TW
-    type: select
   - name: UrlTest
-    proxies:
-      - 🇷🇺 莫斯科 1
-      - 🇷🇺 莫斯科 2
-      - 🇭🇺 匈牙利
-      - 🇨🇳🇭🇰 香港Amazon数据中心
-      - 🇨🇳 台湾省中华电信(HiNet)数据中心
-      - 🇯🇵 日本东京Linode数据中心
-      - 🇺🇸 美国CloudFlare节点
-      - 🇩🇪 德国Hetzner
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
-  - name: HK
     proxies:
-      - 🇨🇳🇭🇰 香港Amazon数据中心
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 600
-  - name: SG
+      - 🇷🇺 莫斯科
+      - 🇷🇺 莫斯科 2
+      - 🇺🇸 圣何塞
+  - name: HK
+    type: select
     proxies:
       - DIRECT
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 600
+  - name: SG
+    type: select
+    proxies:
+      - DIRECT
   - name: TW
+    type: select
     proxies:
-      - 🇨🇳 台湾省中华电信(HiNet)数据中心
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 600
+      - DIRECT
   - name: JP
-    proxies:
-      - 🇯🇵 日本东京Linode数据中心
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 600
+    proxies:
+      - DIRECT
   - name: US
-    proxies:
-      - 🇺🇸 美国CloudFlare节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 600
+    proxies:
+      - 🇺🇸 圣何塞
 rules:
   - DOMAIN-SUFFIX,17gouwuba.com,REJECT
   - DOMAIN-SUFFIX,186078.com,REJECT
@@ -835,12 +761,12 @@ rules:
   - DOMAIN,intl-subscription.iqiyi.com,StreamingSE
   - DOMAIN-KEYWORD,oversea-tw.inter.iqiyi.com,StreamingSE
   - DOMAIN-KEYWORD,oversea-tw.inter.ptqy.gitv.tv,StreamingSE
-  - IP-CIDR,103.44.56.0/22,StreamingSE,
-  - IP-CIDR,118.26.32.0/23,StreamingSE,
-  - IP-CIDR,118.26.120.0/24,StreamingSE,
-  - IP-CIDR,223.119.62.225/28,StreamingSE,
-  - IP-CIDR,23.40.242.10/32,StreamingSE,
-  - IP-CIDR,23.40.241.251/32,StreamingSE,
+  - IP-CIDR,103.44.56.0/22,StreamingSE,no-resolve
+  - IP-CIDR,118.26.32.0/23,StreamingSE,no-resolve
+  - IP-CIDR,118.26.120.0/24,StreamingSE,no-resolve
+  - IP-CIDR,223.119.62.225/28,StreamingSE,no-resolve
+  - IP-CIDR,23.40.242.10/32,StreamingSE,no-resolve
+  - IP-CIDR,23.40.241.251/32,StreamingSE,no-resolve
   - DOMAIN-SUFFIX,api.mgtv.com,StreamingSE
   - DOMAIN-SUFFIX,wetv.vip,StreamingSE
   - DOMAIN-SUFFIX,wetvinfo.com,StreamingSE
