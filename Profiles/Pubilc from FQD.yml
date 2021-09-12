@@ -5,211 +5,599 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - name: 🇨🇳 中国广东广州移动
-    type: vmess
-    server: ngzyd-1.okex-tradebot.xyz
-    port: 30004
-    uuid: bfcd0463-2f1e-4945-9d90-50037230a372
-    alterId: 1
-    cipher: auto
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: ngzyd-1.okex-tradebot.xyz
-  - name: 🇨🇳 中国福建泉州电信 1
+  - name: 🇨🇳 中国 福建 泉州 电信 1
     type: ss
-    server: 117.28.243.253
+    server: 117.28.243.187
     port: 8333
     cipher: rc4-md5
     password: passfw2xs4e!
-  - name: 🇨🇳 中国福建泉州电信 2
+  - name: 🇨🇳 中国 福建 泉州 电信 2
     type: ss
-    server: 117.28.243.248
+    server: p5.22332e.com
     port: 8333
     cipher: rc4-md5
     password: passfw2xs4e!
-  - name: 🇨🇳 中国福建泉州电信 3
-    type: ss
-    server: p2.22332e.com
-    port: 8333
-    cipher: rc4-md5
-    password: passfw2xs4e!
-  - name: 🇨🇳🇭🇰 中国香港腾讯云
-    type: ss
-    server: 43.128.18.186
-    port: 1010
+  - name: 🇨🇳 中国 湖南 娄底 联通 1
+    server: cu.newhost.cc
+    port: 10694
+    type: ssr
     cipher: aes-256-cfb
-    password: laobiao
-  - name: 🇨🇳🇹🇼 中国台湾台中中華電信
-    type: ss
-    server: 59.125.11.158
-    port: 8158
-    cipher: rc4-md5
-    password: passinfo123
-  - name: 🇷🇺 俄罗斯莫斯科
-    type: vmess
-    server: 91.245.227.135
-    port: 38166
-    uuid: 9551d4fd-610e-4bf3-9f93-1df5452c3654
-    alterId: 32
-    cipher: auto
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: 91.245.227.135
-  - name: 🇷🇺 俄罗斯车里雅宾斯克
-    type: vmess
-    server: 80.85.156.31
-    port: 40331
-    uuid: f3dc16e3-715c-4839-abd3-8e0c6df46064
-    alterId: 0
-    cipher: auto
-  - name: 🇯🇵 日本东京
-    type: vmess
-    server: auto.freev2.top
-    port: 57222
-    uuid: 1858f387-b641-4583-b868-34f0e8f93fe9
-    alterId: 1
-    cipher: auto
-    _index: 8
-  - name: 🇺🇸 美国
-    type: ss
-    server: channel.napsternetvtm.dnsmy.xyz
-    port: 989
+    password: tFlIIS
+    protocol: auth_aes128_sha1
+    obfs: http_simple
+    protocol-param: 11752:CbQhlx
+    obfs-param: .www.bing.com
+  - name: 🇨🇳 中国 上海 奉贤 联通 1
+    server: n37.boom.party
+    port: 33300
+    type: ssr
     cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
-  - name: 🇺🇸 美国纽约纽约市 1
+    password: Uk92CS
+    protocol: auth_aes128_sha1
+    obfs: http_simple
+    protocol-param: 254637:Ol4zZv
+    obfs-param: download.windowsupdate.com
+  - name: 🇨🇳 中国 江苏 南通 移动 1
+    server: jp-tyo-04-tr.cdn.savoy.click
+    port: 4443
+    type: trojan
+    password: DEwPCOpZdsYsBJtjFNcI
+    sni: jp-tyo-04-tr.cdn.savoy.click
+    skip-cert-verify: false
+  - name: 🇨🇳🇹🇼 中国 台湾 1
     type: ss
-    server: 84.17.35.86
-    port: 39772
+    server: 103.152.151.68
+    port: 41372
     cipher: aes-256-gcm
-    password: CUndSZnYsPKcu6Kj8THVMBHD
-  - name: 🇺🇸 美国纽约纽约市 2
+    password: 5kGAhC3AmVC35GbruHjSrZf2
+  - name: 🇨🇳🇭🇰 中国 香港 1
+    server: hk-server-02.selfupay.com
+    port: 443
+    type: trojan
+    password: 36ebef7d1b1d6205fd0c55f28800e674
+    sni: hk-server-02.selfupay.com
+    skip-cert-verify: false
+  - name: 🇨🇳🇭🇰 中国 香港 微软云 1
+    server: hk31.ssgnode.ga
+    port: 443
+    type: trojan
+    password: 41742_920c8caa
+    sni: hk31.ssgnode.ga
+    skip-cert-verify: false
+  - name: 🇨🇳🇭🇰 中国 香港 微软云 2
+    server: kaizen-hk-4.cn0.me
+    port: 443
+    type: trojan
+    password: 18e513fe-f7f4-353d-84ca-bc9646fb2528mielink
+    sni: kaizen-hk-4.cn0.me
+    skip-cert-verify: false
+  - name: 🇺🇸 美国 密歇根 1
     type: ss
-    server: 84.17.35.118
-    port: 46642
+    server: 104.244.208.213
+    port: 50168
     cipher: aes-256-gcm
-    password: gYL83DQWXuDbxmZAVVtUTXaK
-  - name: 🇺🇸 美国科罗拉多丹佛
+    password: WCuz7yrfZSCQQXSNrtGPz2HT
+  - name: 🇺🇸 美国 密歇根 2
     type: ss
-    server: 212.102.44.98
-    port: 41676
+    server: 104.244.208.213
+    port: 34815
     cipher: aes-256-gcm
-    password: z6pH3RyttkRWhJ5tpRyt6dYk
-  - name: 🇺🇸 美国德克萨斯达拉斯 1
+    password: LkFAzkzXkSCRYa2CsRdL8cGb
+  - name: 🇺🇸 美国 乔治亚 1
+    server: 139.177.197.51
+    port: 1443
+    type: trojan
+    password: 7x42LetRa0
+    skip-cert-verify: false
+  - name: 🇺🇸 美国 乔治亚 亚特兰大 1
     type: ss
-    server: 185.186.245.44
-    port: 8097
-    cipher: aes-256-cfb
-    password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D
-  - name: 🇺🇸 美国德克萨斯达拉斯 2
-    type: ss
-    server: 185.186.245.44
-    port: 8099
-    cipher: aes-256-cfb
-    password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D
-  - name: 🇺🇸 美国乔治亚亚特兰大 1
-    type: ss
-    server: 198.8.92.84
-    port: 35294
+    server: 208.78.41.197
+    port: 33992
     cipher: aes-256-gcm
-    password: J9Y2ncrdPEC38gwydNFFGBna
-  - name: 🇺🇸 美国乔治亚亚特兰大 2
+    password: 8n6pwAcrrv2pj6tFY2p3TbQ6
+  - name: 🇺🇸 美国 乔治亚 亚特兰大 2
+    type: ss
+    server: 208.78.41.195
+    port: 49396
+    cipher: aes-256-gcm
+    password: BdRWC38L5JUDMTYNNxJGcUwB
+  - name: 🇺🇸 美国 乔治亚 亚特兰大 3
     type: ss
     server: 66.115.182.67
     port: 39772
     cipher: aes-256-gcm
     password: CUndSZnYsPKcu6Kj8THVMBHD
-  - name: 🇺🇸 美国加利福尼亚洛杉矶 1
-    type: vmess
-    server: 107.167.9.124
-    port: 443
-    uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724
-    alterId: 64
-    cipher: auto
-    tls: true
-    network: ws
-    ws-path: /path/310910211916
-    ws-headers:
-      Host: www.17080100.xyz
-  - name: 🇺🇸 美国加利福尼亚洛杉矶 2
+  - name: 🇺🇸 美国 加利福尼亚 洛杉矶 1
+    type: ss
+    server: 104.200.131.167
+    port: 33148
+    cipher: aes-256-gcm
+    password: CMduaFXddcQbwNAAs7xFDnc8
+  - name: 🇺🇸 美国 加利福尼亚 洛杉矶 2
+    type: ss
+    server: 198.147.22.87
+    port: 40093
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: 🇺🇸 美国 加利福尼亚 洛杉矶 3
     type: ss
     server: 198.147.22.87
     port: 33998
     cipher: aes-256-gcm
     password: NHwQTPLCfaTMSqTnU3mjcSxe
-  - name: 🇺🇸 美国加利福尼亚洛杉矶 3
+  - name: 🇺🇸 美国 德克萨斯 休斯顿 1
     type: ss
-    server: 198.147.22.87
-    port: 34815
-    cipher: aes-256-gcm
-    password: LkFAzkzXkSCRYa2CsRdL8cGb
-  - name: 🇺🇸 美国堪萨斯欧弗兰帕克 1
-    type: ss
-    server: 143.244.56.230
+    server: 199.10.64.133
     port: 39772
     cipher: aes-256-gcm
     password: CUndSZnYsPKcu6Kj8THVMBHD
-  - name: 🇺🇸 美国堪萨斯欧弗兰帕克 2
+  - name: 🇺🇸 美国 弗吉尼亚 阿什本 1
+    type: ss
+    server: 207.244.67.149
+    port: 38742
+    cipher: aes-256-gcm
+    password: DKXfWwc4ebscpXTKpbt85rSH
+  - name: 🇺🇸 美国 内华达 拉斯维加斯 1
+    server: t1.ssrsub.one
+    port: 8443
+    type: trojan
+    password: a88b0aa2-b6d3-487c-bada-5da80c3b928e
+    sni: t1.ssrsub.one
+    skip-cert-verify: false
+  - name: 🇺🇸 美国 堪萨斯欧 弗兰帕克 1
     type: ss
     server: 143.244.57.99
     port: 39772
     cipher: aes-256-gcm
     password: CUndSZnYsPKcu6Kj8THVMBHD
-  - name: 🇺🇸 美国弗吉尼亚阿什本亚马逊云
-    type: vmess
-    server: v2raylpc.herokuapp.com
+  - name: 🇺🇸 美国 俄勒冈 波特兰 亚马逊云 1
+    server: 18.236.120.96
+    port: 8081
+    type: ssr
+    cipher: aes-256-cfb
+    password: YFVrXZgRo
+    protocol: origin
+    obfs: tls1.2_ticket_auth
+    protocol-param: ""
+    obfs-param: ""
+  - name: 🇺🇸 美国 德克萨斯 达拉斯 Linode 1
+    server: 45.33.28.243
+    port: 8080
+    type: trojan
+    password: 7x42LetRa0
+    skip-cert-verify: false
+  - name: 🇺🇸 美国 亚利桑那 凤凰城 GoDaddy 1
+    server: usa-server-01.f7256f.cn
     port: 443
-    uuid: ad806487-2d26-4636-98b6-ab85cc8521f7
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: v2raylpc.herokuapp.com
-  - name: 🇺🇸 美国加利福尼亚洛杉矶Cloudradium
-    type: vmess
-    server: 23.224.30.36
+    type: trojan
+    password: 36ebef7d1b1d6205fd0c55f28800e674
+    sni: usa-server-01.f7256f.cn
+    skip-cert-verify: false
+  - name: 🇺🇸 美国 亚利桑那 凤凰城 GoDaddy 2
+    server: sg-server-01.selfupay.com
     port: 443
-    uuid: e4494518-74e8-4d6b-942a-6b332cce09ef
-    alterId: 64
-    cipher: auto
-    tls: true
-    network: ws
-    ws-path: /path/310910211916
-    ws-headers:
-      Host: www.01902367.xyz
-  - name: 🇨🇦 加拿大基奇纳
+    type: trojan
+    password: 36ebef7d1b1d6205fd0c55f28800e674
+    sni: sg-server-01.selfupay.com
+    skip-cert-verify: false
+  - name: 🇷🇺 俄罗斯 1
     type: ss
-    server: ssr2.ssrsub.one
-    port: 57478
+    server: 195.158.249.40
+    port: 33992
+    cipher: aes-256-gcm
+    password: 8n6pwAcrrv2pj6tFY2p3TbQ6
+  - name: 🇷🇺 俄罗斯 莫斯科 1
+    type: ss
+    server: ss12.ssrsub.one
+    port: 3443
+    cipher: aes-128-gcm
+    password: https
+  - name: 🇷🇺 俄罗斯 莫斯科 2
+    type: ss
+    server: ss11.ssrsub.one
+    port: 10443
+    cipher: aes-128-gcm
+    password: suo.yt/ssrsub
+  - name: 🇪🇺 欧洲 1
+    type: ss
+    server: 138.199.16.137
+    port: 40093
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: 🇬🇧 英国 1
+    type: ss
+    server: 84.17.53.86
+    port: 43893
+    cipher: aes-256-gcm
+    password: YyCBeDdYX4cadHpCkkmdJLq8
+  - name: 🇬🇧 英国 2
+    type: ss
+    server: 185.188.61.119
+    port: 43893
+    cipher: aes-256-gcm
+    password: YyCBeDdYX4cadHpCkkmdJLq8
+  - name: 🇬🇧 英国 3
+    type: ss
+    server: 195.181.171.233
+    port: 48938
+    cipher: aes-256-gcm
+    password: 4ejJ8n5ddLuYDUHGXJre2ufJ
+  - name: 🇬🇧 英国 4
+    type: ss
+    server: 195.181.171.233
+    port: 39772
+    cipher: aes-256-gcm
+    password: CUndSZnYsPKcu6Kj8THVMBHD
+  - name: 🇬🇧 英国 5
+    type: ss
+    server: 195.181.171.233
+    port: 49339
+    cipher: aes-256-gcm
+    password: suucSeVLmt6PQKAP77NtGw9x
+  - name: 🇬🇧 英国 英格兰 伦敦 1
+    type: ss
+    server: 152.89.160.213
+    port: 33998
+    cipher: aes-256-gcm
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
+  - name: 🇬🇧 英国 英格兰 伦敦 2
+    server: 109.74.194.189
+    port: 1443
+    type: trojan
+    password: 7x42LetRa0
+    skip-cert-verify: false
+  - name: 🇬🇧 英国 英格兰 伦敦 3
+    server: 138.68.179.78
+    port: 1443
+    type: trojan
+    password: 7x42LetRa0
+    skip-cert-verify: false
+  - name: 🇬🇧 英国 英格兰 曼彻斯特 1
+    type: ss
+    server: 89.238.130.253
+    port: 43893
+    cipher: aes-256-gcm
+    password: YyCBeDdYX4cadHpCkkmdJLq8
+  - name: 🇩🇪 德国 1
+    type: ss
+    server: 45.134.224.15
+    port: 46642
+    cipher: aes-256-gcm
+    password: gYL83DQWXuDbxmZAVVtUTXaK
+  - name: 🇩🇪 德国 2
+    server: 194.195.124.174
+    port: 4443
+    type: trojan
+    password: 7x42LetRa0
+    skip-cert-verify: false
+  - name: 🇩🇪 德国 法兰克福 1
+    type: ss
+    server: 217.138.216.243
+    port: 48938
+    cipher: aes-256-gcm
+    password: 4ejJ8n5ddLuYDUHGXJre2ufJ
+  - name: 🇩🇪 德国 法兰克福 2
+    type: ss
+    server: 37.120.196.51
+    port: 43893
+    cipher: aes-256-gcm
+    password: YyCBeDdYX4cadHpCkkmdJLq8
+  - name: 🇩🇪 德国 法兰克福 3
+    type: ss
+    server: 37.120.196.53
+    port: 49396
+    cipher: aes-256-gcm
+    password: BdRWC38L5JUDMTYNNxJGcUwB
+  - name: 🇩🇪 德国 法兰克福 4
+    type: ss
+    server: 37.120.196.53
+    port: 48938
+    cipher: aes-256-gcm
+    password: 4ejJ8n5ddLuYDUHGXJre2ufJ
+  - name: 🇩🇪 德国 法兰克福 5
+    type: ss
+    server: 217.138.216.243
+    port: 43893
+    cipher: aes-256-gcm
+    password: YyCBeDdYX4cadHpCkkmdJLq8
+  - name: 🇩🇪 德国 法兰克福 6
+    type: ss
+    server: 37.120.217.149
+    port: 33998
+    cipher: aes-256-gcm
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
+  - name: 🇩🇪 德国 法兰克福 7
+    type: ss
+    server: 37.120.196.53
+    port: 43893
+    cipher: aes-256-gcm
+    password: YyCBeDdYX4cadHpCkkmdJLq8
+  - name: 🇩🇪 德国 法兰克福 8
+    type: ss
+    server: 185.102.219.6
+    port: 43893
+    cipher: aes-256-gcm
+    password: YyCBeDdYX4cadHpCkkmdJLq8
+  - name: 🇩🇪 德国 法兰克福 9
+    server: 139.59.209.152
+    port: 4443
+    type: trojan
+    password: 7x42LetRa0
+    skip-cert-verify: false
+  - name: 🇩🇪 德国 纽伦堡 1
+    server: de-nue-01-tr.cdn.savoy.click
+    port: 2443
+    type: trojan
+    password: DEwPCOpZdsYsBJtjFNcI
+    sni: de-nue-01-tr.cdn.savoy.click
+    skip-cert-verify: false
+  - name: 🇨🇦 加拿大 基奇纳 1
+    type: ss
+    server: ssr3.ssrsub.one
+    port: 28139
+    cipher: aes-256-cfb
+    password: suo.yt/ssrsub
+  - name: 🇨🇦 加拿大 基奇纳 2
+    type: ss
+    server: ssr4.ssrsub.one
+    port: 22478
     cipher: aes-256-cfb
     password: https://dlj.tf/ssrsub
-  - name: 🇨🇦 加拿大魁北克博阿努瓦OVH
+  - name: 🇨🇦 加拿大 基奇纳 3
+    type: ss
+    server: 45.62.231.225
+    port: 22478
+    cipher: aes-256-cfb
+    password: https://dlj.tf/ssrsub
+  - name: 🇨🇦 加拿大 基奇纳 4
+    type: ss
+    server: ss9.ssrsub.one
+    port: 28139
+    cipher: aes-256-cfb
+    password: suo.yt/ssrsub
+  - name: 🇨🇦 加拿大 基奇纳 5
+    type: ss
+    server: ss10.ssrsub.one
+    port: 22478
+    cipher: aes-256-cfb
+    password: https
+  - name: 🇨🇦 加拿大 多伦多 1
+    server: 138.197.162.114
+    port: 4443
+    type: trojan
+    password: 7x42LetRa0
+    skip-cert-verify: false
+  - name: 🇨🇦 加拿大 魁北克博 阿努瓦 OVH 1
     type: ss
     server: 142.44.133.196
     port: 18888
     cipher: aes-256-cfb
     password: c97fce048
-  - name: 🇳🇱 荷兰
+  - name: 🇫🇷 法国 马赛 1
+    type: ss
+    server: 185.166.84.87
+    port: 33992
+    cipher: aes-256-gcm
+    password: 8n6pwAcrrv2pj6tFY2p3TbQ6
+  - name: 🇫🇷 法国 马赛 2
+    type: ss
+    server: 185.166.84.19
+    port: 40093
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: 🇫🇷 法国 马赛 3
+    type: ss
+    server: 185.166.84.87
+    port: 33998
+    cipher: aes-256-gcm
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
+  - name: 🇦🇺 澳大利亚 新南威尔士 悉尼 1
+    type: ss
+    server: 45.248.76.171
+    port: 33992
+    cipher: aes-256-gcm
+    password: 8n6pwAcrrv2pj6tFY2p3TbQ6
+  - name: 🇦🇹 奥地利 维也纳 1
+    type: ss
+    server: 5.253.207.85
+    port: 49396
+    cipher: aes-256-gcm
+    password: BdRWC38L5JUDMTYNNxJGcUwB
+  - name: 🇵🇱 波兰 西里西亚 1
+    type: ss
+    server: 194.150.167.28
+    port: 33992
+    cipher: aes-256-gcm
+    password: 8n6pwAcrrv2pj6tFY2p3TbQ6
+  - name: 🇧🇦 波黑 1
+    type: ss
+    server: 185.164.34.250
+    port: 48938
+    cipher: aes-256-gcm
+    password: 4ejJ8n5ddLuYDUHGXJre2ufJ
+  - name: 🇧🇦 波黑 2
+    type: ss
+    server: 185.212.111.6
+    port: 49339
+    cipher: aes-256-gcm
+    password: suucSeVLmt6PQKAP77NtGw9x
+  - name: 🇧🇪 比利时 1
+    type: ss
+    server: 217.138.211.219
+    port: 49396
+    cipher: aes-256-gcm
+    password: BdRWC38L5JUDMTYNNxJGcUwB
+  - name: 🇮🇷 伊朗 1
+    type: ss
+    server: 185.108.106.146
+    port: 45746
+    cipher: aes-256-gcm
+    password: wEsFcHCvbL4eJkL4DZQa7RgR
+  - name: 🇷🇴 罗马尼亚 1
+    type: ss
+    server: 146.70.27.37
+    port: 43893
+    cipher: aes-256-gcm
+    password: YyCBeDdYX4cadHpCkkmdJLq8
+  - name: 🇷🇴 罗马尼亚 2
+    type: ss
+    server: 86.106.136.85
+    port: 48938
+    cipher: aes-256-gcm
+    password: 4ejJ8n5ddLuYDUHGXJre2ufJ
+  - name: 🇷🇴 罗马尼亚 3
+    type: ss
+    server: 193.29.106.59
+    port: 39772
+    cipher: aes-256-gcm
+    password: CUndSZnYsPKcu6Kj8THVMBHD
+  - name: 🇷🇴 罗马尼亚 4
+    type: ss
+    server: 193.29.106.29
+    port: 39772
+    cipher: aes-256-gcm
+    password: CUndSZnYsPKcu6Kj8THVMBHD
+  - name: 🇷🇴 罗马尼亚 5
+    type: ss
+    server: 89.37.95.23
+    port: 43893
+    cipher: aes-256-gcm
+    password: YyCBeDdYX4cadHpCkkmdJLq8
+  - name: 🇷🇴 罗马尼亚 6
+    type: ss
+    server: 193.29.107.163
+    port: 43893
+    cipher: aes-256-gcm
+    password: YyCBeDdYX4cadHpCkkmdJLq8
+  - name: 🇷🇴 罗马尼亚 7
+    type: ss
+    server: 193.29.106.59
+    port: 49126
+    cipher: aes-256-gcm
+    password: wrCaGtrUbzeRqQLdc8Kmk3Nd
+  - name: 🇷🇴 罗马尼亚 8
+    type: ss
+    server: 193.29.106.59
+    port: 42816
+    cipher: aes-256-gcm
+    password: tBKBf4pVzNCFKdbPgvwrNXq3
+  - name: 🇷🇴 罗马尼亚 9
+    type: ss
+    server: 193.29.106.59
+    port: 48970
+    cipher: aes-256-gcm
+    password: ZKEsXkFbUZ2z667YA8A7cEDP
+  - name: 🇷🇴 罗马尼亚 10
+    type: ss
+    server: 193.29.106.61
+    port: 39772
+    cipher: aes-256-gcm
+    password: CUndSZnYsPKcu6Kj8THVMBHD
+  - name: 🇷🇴 罗马尼亚 11
+    server: ch-server-01.f7256f.cn
+    port: 443
+    type: trojan
+    password: 36ebef7d1b1d6205fd0c55f28800e674
+    sni: ch-server-01.f7256f.cn
+    skip-cert-verify: false
+  - name: 🇷🇴 罗马尼亚 布加勒斯特 1
+    type: ss
+    server: 5.154.174.67
+    port: 37473
+    cipher: aes-256-gcm
+    password: enctdKyJfSu76VqznKwTt6Ap
+  - name: 🇷🇴 罗马尼亚 布加勒斯特 2
+    type: ss
+    server: 5.154.174.67
+    port: 31944
+    cipher: aes-256-gcm
+    password: aYNeKDMzYQYw4KbUbJA8Wszq
+  - name: 🇷🇴 罗马尼亚 布加勒斯特 3
+    type: ss
+    server: 5.154.174.189
+    port: 35294
+    cipher: aes-256-gcm
+    password: J9Y2ncrdPEC38gwydNFFGBna
+  - name: 🇷🇴 罗马尼亚 布加勒斯特 4
+    type: ss
+    server: 91.90.123.115
+    port: 45329
+    cipher: aes-256-gcm
+    password: CXSjgD7u7Ar7GxkZ4CgTMUsj
+  - name: 🇷🇴 罗马尼亚 布加勒斯特 5
+    type: ss
+    server: 91.90.123.115
+    port: 31572
+    cipher: aes-256-gcm
+    password: n8w4StnbVD9dmXYn4Ajt87EA
+  - name: 🇷🇴 罗马尼亚 布加勒斯特 6
+    type: ss
+    server: 91.90.123.115
+    port: 38620
+    cipher: aes-256-gcm
+    password: Kquv5UhvZXNMemAQy8DxZ7qn
+  - name: 🇷🇴 罗马尼亚 布加勒斯特 7
+    type: ss
+    server: 91.90.123.115
+    port: 33148
+    cipher: aes-256-gcm
+    password: CMduaFXddcQbwNAAs7xFDnc8
+  - name: 🇷🇴 罗马尼亚 布加勒斯特 8
+    type: ss
+    server: 91.90.123.115
+    port: 49339
+    cipher: aes-256-gcm
+    password: suucSeVLmt6PQKAP77NtGw9x
+  - name: 🇷🇴 罗马尼亚 布加勒斯特 9
+    type: ss
+    server: 91.90.123.115
+    port: 37588
+    cipher: aes-256-gcm
+    password: kD9vkjnE6dsUzwQfvKkPkQAd
+  - name: 🇷🇴 罗马尼亚 布加勒斯特 10
+    type: ss
+    server: 91.90.123.115
+    port: 48938
+    cipher: aes-256-gcm
+    password: 4ejJ8n5ddLuYDUHGXJre2ufJ
+  - name: 🇳🇱 荷兰 1
+    type: ss
+    server: 176.125.231.5
+    port: 34815
+    cipher: aes-256-gcm
+    password: LkFAzkzXkSCRYa2CsRdL8cGb
+  - name: 🇳🇱 荷兰 2
+    type: ss
+    server: 176.125.231.5
+    port: 48794
+    cipher: aes-256-gcm
+    password: r9Q3adc3ru9sfBDPEj4yp6U6
+  - name: 🇳🇱 荷兰 3
+    type: ss
+    server: 176.125.231.5
+    port: 45329
+    cipher: aes-256-gcm
+    password: CXSjgD7u7Ar7GxkZ4CgTMUsj
+  - name: 🇳🇱 荷兰 4
+    server: 178.62.201.120
+    port: 4443
+    type: trojan
+    password: 7x42LetRa0
+    skip-cert-verify: false
+  - name: 🇳🇱 荷兰 5
     type: ss
     server: 45.130.137.26
     port: 39772
     cipher: aes-256-gcm
     password: CUndSZnYsPKcu6Kj8THVMBHD
-  - name: 🇳🇱 荷兰哈勒姆
-    type: vmess
-    server: 51.15.113.164
-    port: 80
-    uuid: 7512e0f4-05b3-4b97-8972-d3fea44cf452
-    alterId: 64
-    cipher: auto
-    network: ws
-    ws-path: /sshocean
-    ws-headers:
-      Host: 51.15.113.164
-  - name: 🇳🇱 荷兰阿姆斯特丹 1
+  - name: 🇳🇱 荷兰 阿姆斯特丹 1
+    server: ned-server-02.f7256f.cn
+    port: 443
+    type: trojan
+    password: 36ebef7d1b1d6205fd0c55f28800e674
+    sni: ned-server-02.f7256f.cn
+    skip-cert-verify: false
+  - name: 🇳🇱 荷兰 阿姆斯特丹 2
     type: vmess
     server: 46.182.107.154
     port: 443
@@ -221,7 +609,7 @@ proxies:
     ws-path: /footers
     ws-headers:
       Host: www.05222027.xyz
-  - name: 🇳🇱 荷兰阿姆斯特丹 2
+  - name: 🇳🇱 荷兰 阿姆斯特丹 3
     type: vmess
     server: 46.182.107.165
     port: 443
@@ -233,26 +621,7 @@ proxies:
     ws-path: /footers
     ws-headers:
       Host: www.07890885.xyz
-  - name: 🇳🇱 荷兰阿姆斯特丹 3
-    type: vmess
-    server: 46.182.107.36
-    port: 443
-    uuid: 65ea6727-4461-47a7-a5c4-fef2c67f2f79
-    alterId: 64
-    cipher: auto
-    tls: true
-    network: ws
-    ws-path: /footers
-    ws-headers:
-      Host: www.09462550.xyz
-  - name: 🇳🇱 荷兰阿姆斯特丹 4
-    type: vmess
-    server: 5.180.79.11
-    port: 27449
-    uuid: 0cd64346-cd8d-4306-c256-05e12c76d5a5
-    alterId: 64
-    cipher: auto
-  - name: 🇳🇱 荷兰阿姆斯特丹 5
+  - name: 🇳🇱 荷兰 阿姆斯特丹 4
     type: vmess
     server: 46.182.107.94
     port: 443
@@ -264,31 +633,7 @@ proxies:
     ws-path: /footers
     ws-headers:
       Host: www.54872833.xyz
-  - name: 🇳🇱 荷兰阿姆斯特丹 6
-    type: vmess
-    server: 46.182.107.146
-    port: 443
-    uuid: 418048af-a293-4b99-9b0c-98ca4690dd24
-    alterId: 64
-    cipher: auto
-    tls: true
-    network: ws
-    ws-path: /footers
-    ws-headers:
-      Host: www.44590130.xyz
-  - name: 🇳🇱 荷兰阿姆斯特丹 7
-    type: vmess
-    server: 46.182.107.157
-    port: 443
-    uuid: 20b30916-e203-412e-8ec0-900f3acd5128
-    alterId: 64
-    cipher: auto
-    tls: true
-    network: ws
-    ws-path: /footers
-    ws-headers:
-      Host: www.73345741.xyz
-  - name: 🇳🇱 荷兰阿姆斯特丹 8
+  - name: 🇳🇱 荷兰 阿姆斯特丹 5
     type: vmess
     server: 46.182.107.93
     port: 443
@@ -300,146 +645,199 @@ proxies:
     ws-path: /footers
     ws-headers:
       Host: www.54872833.xyz
-  - name: 🇳🇱 荷兰阿姆斯特丹 9
-    type: vmess
-    server: 46.182.107.39
-    port: 443
-    uuid: d3133484-f2bf-4b0c-8d38-f8e645b65687
-    alterId: 64
-    cipher: auto
-    tls: true
-    network: ws
-    ws-path: /footers
-    ws-headers:
-      Host: www.07890885.xyz
-  - name: 🇳🇱 荷兰阿姆斯特丹 10
-    type: vmess
-    server: 46.182.107.25
-    port: 443
-    uuid: 0a1ab3bd-0431-4da8-ad8a-238367ce4efc
-    alterId: 64
-    cipher: auto
-    tls: true
-    network: ws
-    ws-path: /path/310910211916
-    ws-headers:
-      Host: www.11300814.xyz
-  - name: 🇳🇱 荷兰阿姆斯特丹 11
-    type: vmess
-    server: 46.182.107.37
-    port: 443
-    uuid: 65ea6727-4461-47a7-a5c4-fef2c67f2f79
-    alterId: 64
-    cipher: auto
-    tls: true
-    network: ws
-    ws-path: /footers
-    ws-headers:
-      Host: www.09462550.xyz
-  - name: 🇩🇪 德国法兰克福亚马逊云
-    type: vmess
-    server: 18.193.122.123
-    port: 25275
-    uuid: eebfe76a-c71f-49e4-f983-983384d5dadf
-    alterId: 64
-    cipher: auto
-  - name: 🇬🇧 英国
-    type: vmess
-    server: 5.183.102.142
-    port: 14420
-    uuid: 9984501d-e80a-4144-c6bd-2503fb49872d
-    alterId: 64
-    cipher: auto
-  - name: 🇪🇸 西班牙
-    type: vmess
-    server: 5.183.103.196
-    port: 57801
-    uuid: 337ae850-ba0b-4647-e9b7-a222dc09b0dc
-    alterId: 64
-    cipher: auto
-  - name: 🇳🇿 新西兰
+  - name: 🇭🇷 克罗地亚 1
     type: ss
-    server: 124.150.139.125
-    port: 31944
-    cipher: aes-256-gcm
-    password: aYNeKDMzYQYw4KbUbJA8Wszq
-  - name: 🇦🇺 澳大利亚新南威尔士悉尼
-    type: ss
-    server: 45.77.48.44
-    port: 8099
-    cipher: aes-256-cfb
-    password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D
-  - name: 🇦🇺 澳大利亚昆士兰布里斯班
-    type: ss
-    server: 144.48.39.11
+    server: 85.10.50.164
     port: 39772
     cipher: aes-256-gcm
     password: CUndSZnYsPKcu6Kj8THVMBHD
-  - name: 🇦🇺 澳大利亚维多利亚墨尔本
+  - name: 🇭🇷 克罗地亚 2
     type: ss
-    server: 144.48.38.149
+    server: 85.10.50.164
+    port: 37588
+    cipher: aes-256-gcm
+    password: kD9vkjnE6dsUzwQfvKkPkQAd
+  - name: 🇭🇷 克罗地亚 3
+    type: ss
+    server: 85.10.50.164
+    port: 50168
+    cipher: aes-256-gcm
+    password: WCuz7yrfZSCQQXSNrtGPz2HT
+  - name: 🇭🇷 克罗地亚 4
+    type: ss
+    server: 85.10.50.164
+    port: 40093
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: 🇮🇳 印度 1
+    type: ss
+    server: 45.125.247.93
+    port: 43893
+    cipher: aes-256-gcm
+    password: YyCBeDdYX4cadHpCkkmdJLq8
+  - name: 🇮🇳 印度 2
+    type: ss
+    server: 165.231.253.147
+    port: 31764
+    cipher: aes-256-gcm
+    password: YgusH2MWA8PWc3p2VDsR7AVv
+  - name: 🇮🇳 印度 3
+    type: ss
+    server: 165.231.253.147
+    port: 33998
+    cipher: aes-256-gcm
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
+  - name: 🇮🇳 印度 4
+    type: ss
+    server: 165.231.253.147
+    port: 31757
+    cipher: aes-256-gcm
+    password: wj7nDCuNARchSeKNCN8VFK62
+  - name: 🇮🇳 印度 5
+    type: ss
+    server: 103.94.27.101
+    port: 39772
+    cipher: aes-256-gcm
+    password: CUndSZnYsPKcu6Kj8THVMBHD
+  - name: 🇮🇳 印度 6
+    type: ss
+    server: 165.231.253.147
+    port: 40093
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: 🇮🇳 印度 7
+    type: ss
+    server: 165.231.253.147
+    port: 33992
+    cipher: aes-256-gcm
+    password: 8n6pwAcrrv2pj6tFY2p3TbQ6
+  - name: 🇮🇳 印度 8
+    type: ss
+    server: 165.231.253.147
+    port: 31572
+    cipher: aes-256-gcm
+    password: n8w4StnbVD9dmXYn4Ajt87EA
+  - name: 🇮🇳 印度 9
+    type: ss
+    server: 103.94.27.101
+    port: 37588
+    cipher: aes-256-gcm
+    password: kD9vkjnE6dsUzwQfvKkPkQAd
+  - name: 🇮🇳 印度 印多尔 1
+    type: ss
+    server: 137.59.52.107
+    port: 33992
+    cipher: aes-256-gcm
+    password: 8n6pwAcrrv2pj6tFY2p3TbQ6
+  - name: 🇮🇳 印度 印多尔 2
+    type: ss
+    server: 137.59.52.107
+    port: 40093
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: 🇮🇳 印度 班加罗尔 1
+    server: in1-1.noojat.com
+    port: 1443
+    type: trojan
+    password: 7x42LetRa0
+    sni: in1-1.noojat.com
+    skip-cert-verify: false
+  - name: 🇮🇳 印度 班加罗尔 2
+    server: 159.89.168.0
+    port: 1443
+    type: trojan
+    password: 7x42LetRa0
+    skip-cert-verify: false
+  - name: 🇮🇹 意大利 米兰 1
+    type: ss
+    server: 217.138.219.227
+    port: 39772
+    cipher: aes-256-gcm
+    password: CUndSZnYsPKcu6Kj8THVMBHD
+  - name: 🇮🇹 意大利 米兰 2
+    type: ss
+    server: 217.138.219.229
+    port: 43893
+    cipher: aes-256-gcm
+    password: YyCBeDdYX4cadHpCkkmdJLq8
+  - name: 🇱🇺 卢森堡 1
+    type: ss
+    server: 185.153.151.83
+    port: 39772
+    cipher: aes-256-gcm
+    password: CUndSZnYsPKcu6Kj8THVMBHD
+  - name: 🇱🇺 卢森堡 2
+    type: ss
+    server: 185.153.151.100
     port: 35294
     cipher: aes-256-gcm
     password: J9Y2ncrdPEC38gwydNFFGBna
-  - name: 🇦🇺 澳大利亚南澳大利亚阿德莱德 1
+  - name: 🇱🇺 卢森堡 3
     type: ss
-    server: 45.248.79.35
-    port: 37473
+    server: 185.153.151.85
+    port: 33992
     cipher: aes-256-gcm
-    password: enctdKyJfSu76VqznKwTt6Ap
-  - name: 🇦🇺 澳大利亚南澳大利亚阿德莱德 2
+    password: 8n6pwAcrrv2pj6tFY2p3TbQ6
+  - name: 🇱🇻 拉脱维亚 里加 1
     type: ss
-    server: 45.248.79.37
-    port: 39772
+    server: 188.92.78.203
+    port: 33998
     cipher: aes-256-gcm
-    password: CUndSZnYsPKcu6Kj8THVMBHD
-  - name: 🇧🇪 比利时 1
-    server: 193.9.114.34
-    port: 443
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
+  - name: 🇸🇪 瑞典 斯德哥尔摩 1
+    type: ss
+    server: 45.83.91.133
+    port: 40093
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: 🇵🇰 巴基斯坦 1
+    type: ss
+    server: 5.189.202.16
+    port: 41738
+    cipher: aes-256-gcm
+    password: X6yMGXnfUsuKTvEDYZSLPk4d
+  - name: 🇵🇰 巴基斯坦 2
+    type: ss
+    server: 5.189.202.16
+    port: 49339
+    cipher: aes-256-gcm
+    password: suucSeVLmt6PQKAP77NtGw9x
+  - name: 🇵🇰 巴基斯坦 3
+    type: ss
+    server: 5.189.202.16
+    port: 50695
+    cipher: aes-256-gcm
+    password: gqtwGu9bVreJqL3FTHSVKGzy
+  - name: 🇵🇰 巴基斯坦 4
+    type: ss
+    server: 5.189.202.16
+    port: 37588
+    cipher: aes-256-gcm
+    password: kD9vkjnE6dsUzwQfvKkPkQAd
+  - name: 🇵🇰 巴基斯坦 5
+    type: ss
+    server: 5.189.202.16
+    port: 44539
+    cipher: aes-256-gcm
+    password: r6hDrkP4Et6EENTS8Qy7Tcmg
+  - name: 🇵🇰 巴基斯坦 6
+    type: ss
+    server: 5.189.202.16
+    port: 44745
+    cipher: aes-256-gcm
+    password: fyXdw87yCH9SAmFkPvsvLVqC
+  - name: 🇸🇬 新加坡 1
+    server: 188.166.242.117
+    port: 4443
     type: trojan
-    password: 91dc08d3-6e5e-4293-a660-b9Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8
+    password: 7x42LetRa0
     skip-cert-verify: false
-  - name: 🇧🇪 比利时 2
-    server: 193.9.114.34
+  - name: 🇸🇬 新加坡 亚马逊云 1
+    server: www.ligonwen.cf
     port: 443
     type: trojan
-    password: i1wb2x5MTMwNTpHIXlCd1BXSDNWYW8
-    skip-cert-verify: false
-  - name: 🇧🇪 比利时 3
-    server: 193.9.114.34
-    port: 443
-    type: trojan
-    password: V0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8
-    skip-cert-verify: false
-  - name: 🇧🇪 比利时 4
-    server: 193.9.114.34
-    port: 443
-    type: trojan
-    password: 4a9fd9c8-3f23Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8
-    skip-cert-verify: false
-  - name: 🇧🇪 比利时 5
-    server: 193.9.114.34
-    port: 443
-    type: trojan
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8
-    skip-cert-verify: false
-  - name: 🇧🇪 比利时 6
-    server: 193.9.114.34
-    port: 443
-    type: trojan
-    password: 4aY2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8
-    skip-cert-verify: false
-  - name: 🇧🇪 比利时 7
-    server: 193.9.114.34
-    port: 443
-    type: trojan
-    password: 4a9Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8
-    skip-cert-verify: false
-  - name: 🇧🇪 比利时 8
-    server: 193.9.114.34
-    port: 443
-    type: trojan
-    password: 167daeca-a71f-4923-8ea7-b716cbaY2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8
+    password: 7836137d-2db0-4809-9b57-ed14cf2ed4ce
+    sni: www.ligonwen.cf
     skip-cert-verify: false
 proxy-groups:
   - name: Proxies
@@ -451,61 +849,136 @@ proxy-groups:
       - JP
       - US
       - TW
-      - 🇨🇳 中国广东广州移动
-      - 🇨🇳 中国福建泉州电信 1
-      - 🇨🇳 中国福建泉州电信 2
-      - 🇨🇳 中国福建泉州电信 3
-      - 🇨🇳🇭🇰 中国香港腾讯云
-      - 🇨🇳🇹🇼 中国台湾台中中華電信
-      - 🇷🇺 俄罗斯莫斯科
-      - 🇷🇺 俄罗斯车里雅宾斯克
-      - 🇯🇵 日本东京
-      - 🇺🇸 美国
-      - 🇺🇸 美国纽约纽约市 1
-      - 🇺🇸 美国纽约纽约市 2
-      - 🇺🇸 美国德克萨斯达拉斯 1
-      - 🇺🇸 美国德克萨斯达拉斯 2
-      - 🇺🇸 美国乔治亚亚特兰大 1
-      - 🇺🇸 美国乔治亚亚特兰大 2
-      - 🇺🇸 美国加利福尼亚洛杉矶 1
-      - 🇺🇸 美国加利福尼亚洛杉矶 2
-      - 🇺🇸 美国加利福尼亚洛杉矶 3
-      - 🇺🇸 美国堪萨斯欧弗兰帕克 1
-      - 🇺🇸 美国堪萨斯欧弗兰帕克 2
-      - 🇺🇸 美国弗吉尼亚阿什本亚马逊云
-      - 🇺🇸 美国加利福尼亚洛杉矶Cloudradium
-      - 🇨🇦 加拿大基奇纳
-      - 🇨🇦 加拿大魁北克博阿努瓦OVH
-      - 🇳🇱 荷兰
-      - 🇳🇱 荷兰哈勒姆
-      - 🇳🇱 荷兰阿姆斯特丹 1
-      - 🇳🇱 荷兰阿姆斯特丹 2
-      - 🇳🇱 荷兰阿姆斯特丹 3
-      - 🇳🇱 荷兰阿姆斯特丹 4
-      - 🇳🇱 荷兰阿姆斯特丹 5
-      - 🇳🇱 荷兰阿姆斯特丹 6
-      - 🇳🇱 荷兰阿姆斯特丹 7
-      - 🇳🇱 荷兰阿姆斯特丹 8
-      - 🇳🇱 荷兰阿姆斯特丹 9
-      - 🇳🇱 荷兰阿姆斯特丹 10
-      - 🇳🇱 荷兰阿姆斯特丹 11
-      - 🇩🇪 德国法兰克福亚马逊云
-      - 🇬🇧 英国
-      - 🇪🇸 西班牙
-      - 🇳🇿 新西兰
-      - 🇦🇺 澳大利亚新南威尔士悉尼
-      - 🇦🇺 澳大利亚昆士兰布里斯班
-      - 🇦🇺 澳大利亚维多利亚墨尔本
-      - 🇦🇺 澳大利亚南澳大利亚阿德莱德 1
-      - 🇦🇺 澳大利亚南澳大利亚阿德莱德 2
+      - 🇨🇳 中国 福建 泉州 电信 1
+      - 🇨🇳 中国 福建 泉州 电信 2
+      - 🇨🇳 中国 湖南 娄底 联通 1
+      - 🇨🇳 中国 上海 奉贤 联通 1
+      - 🇨🇳 中国 江苏 南通 移动 1
+      - 🇨🇳🇹🇼 中国 台湾 1
+      - 🇨🇳🇭🇰 中国 香港 1
+      - 🇨🇳🇭🇰 中国 香港 微软云 1
+      - 🇨🇳🇭🇰 中国 香港 微软云 2
+      - 🇺🇸 美国 密歇根 1
+      - 🇺🇸 美国 密歇根 2
+      - 🇺🇸 美国 乔治亚 1
+      - 🇺🇸 美国 乔治亚 亚特兰大 1
+      - 🇺🇸 美国 乔治亚 亚特兰大 2
+      - 🇺🇸 美国 乔治亚 亚特兰大 3
+      - 🇺🇸 美国 加利福尼亚 洛杉矶 1
+      - 🇺🇸 美国 加利福尼亚 洛杉矶 2
+      - 🇺🇸 美国 加利福尼亚 洛杉矶 3
+      - 🇺🇸 美国 德克萨斯 休斯顿 1
+      - 🇺🇸 美国 弗吉尼亚 阿什本 1
+      - 🇺🇸 美国 内华达 拉斯维加斯 1
+      - 🇺🇸 美国 俄勒冈 波特兰 亚马逊云 1
+      - 🇺🇸 美国 德克萨斯 达拉斯 Linode 1
+      - 🇺🇸 美国 亚利桑那 凤凰城 GoDaddy 1
+      - 🇺🇸 美国 亚利桑那 凤凰城 GoDaddy 2
+      - 🇷🇺 俄罗斯 1
+      - 🇷🇺 俄罗斯 莫斯科 1
+      - 🇷🇺 俄罗斯 莫斯科 2
+      - 🇪🇺 欧洲 1
+      - 🇬🇧 英国 1
+      - 🇬🇧 英国 2
+      - 🇬🇧 英国 3
+      - 🇬🇧 英国 4
+      - 🇬🇧 英国 5
+      - 🇬🇧 英国 英格兰 伦敦 1
+      - 🇬🇧 英国 英格兰 伦敦 2
+      - 🇬🇧 英国 英格兰 伦敦 3
+      - 🇬🇧 英国 英格兰 曼彻斯特 1
+      - 🇩🇪 德国 1
+      - 🇩🇪 德国 2
+      - 🇩🇪 德国 法兰克福 1
+      - 🇩🇪 德国 法兰克福 2
+      - 🇩🇪 德国 法兰克福 3
+      - 🇩🇪 德国 法兰克福 4
+      - 🇩🇪 德国 法兰克福 5
+      - 🇩🇪 德国 法兰克福 6
+      - 🇩🇪 德国 法兰克福 7
+      - 🇩🇪 德国 法兰克福 8
+      - 🇩🇪 德国 法兰克福 9
+      - 🇩🇪 德国 纽伦堡 1
+      - 🇨🇦 加拿大 基奇纳 1
+      - 🇨🇦 加拿大 基奇纳 2
+      - 🇨🇦 加拿大 基奇纳 3
+      - 🇨🇦 加拿大 基奇纳 4
+      - 🇨🇦 加拿大 基奇纳 5
+      - 🇨🇦 加拿大 多伦多 1
+      - 🇨🇦 加拿大 魁北克博 阿努瓦 OVH 1
+      - 🇫🇷 法国 马赛 1
+      - 🇫🇷 法国 马赛 2
+      - 🇫🇷 法国 马赛 3
+      - 🇦🇺 澳大利亚 新南威尔士 悉尼 1
+      - 🇦🇹 奥地利 维也纳 1
+      - 🇵🇱 波兰 西里西亚 1
+      - 🇧🇦 波黑 1
+      - 🇧🇦 波黑 2
       - 🇧🇪 比利时 1
-      - 🇧🇪 比利时 2
-      - 🇧🇪 比利时 3
-      - 🇧🇪 比利时 4
-      - 🇧🇪 比利时 5
-      - 🇧🇪 比利时 6
-      - 🇧🇪 比利时 7
-      - 🇧🇪 比利时 8
+      - 🇮🇷 伊朗 1
+      - 🇷🇴 罗马尼亚 1
+      - 🇷🇴 罗马尼亚 2
+      - 🇷🇴 罗马尼亚 3
+      - 🇷🇴 罗马尼亚 4
+      - 🇷🇴 罗马尼亚 5
+      - 🇷🇴 罗马尼亚 6
+      - 🇷🇴 罗马尼亚 7
+      - 🇷🇴 罗马尼亚 8
+      - 🇷🇴 罗马尼亚 9
+      - 🇷🇴 罗马尼亚 10
+      - 🇷🇴 罗马尼亚 11
+      - 🇷🇴 罗马尼亚 布加勒斯特 1
+      - 🇷🇴 罗马尼亚 布加勒斯特 2
+      - 🇷🇴 罗马尼亚 布加勒斯特 3
+      - 🇷🇴 罗马尼亚 布加勒斯特 4
+      - 🇷🇴 罗马尼亚 布加勒斯特 5
+      - 🇷🇴 罗马尼亚 布加勒斯特 6
+      - 🇷🇴 罗马尼亚 布加勒斯特 7
+      - 🇷🇴 罗马尼亚 布加勒斯特 8
+      - 🇷🇴 罗马尼亚 布加勒斯特 9
+      - 🇷🇴 罗马尼亚 布加勒斯特 10
+      - 🇳🇱 荷兰 1
+      - 🇳🇱 荷兰 2
+      - 🇳🇱 荷兰 3
+      - 🇳🇱 荷兰 4
+      - 🇳🇱 荷兰 5
+      - 🇳🇱 荷兰 阿姆斯特丹 1
+      - 🇳🇱 荷兰 阿姆斯特丹 2
+      - 🇳🇱 荷兰 阿姆斯特丹 3
+      - 🇳🇱 荷兰 阿姆斯特丹 4
+      - 🇳🇱 荷兰 阿姆斯特丹 5
+      - 🇭🇷 克罗地亚 1
+      - 🇭🇷 克罗地亚 2
+      - 🇭🇷 克罗地亚 3
+      - 🇭🇷 克罗地亚 4
+      - 🇮🇳 印度 1
+      - 🇮🇳 印度 2
+      - 🇮🇳 印度 3
+      - 🇮🇳 印度 4
+      - 🇮🇳 印度 5
+      - 🇮🇳 印度 6
+      - 🇮🇳 印度 7
+      - 🇮🇳 印度 8
+      - 🇮🇳 印度 9
+      - 🇮🇳 印度 印多尔 1
+      - 🇮🇳 印度 印多尔 2
+      - 🇮🇳 印度 班加罗尔 1
+      - 🇮🇳 印度 班加罗尔 2
+      - 🇮🇹 意大利 米兰 1
+      - 🇮🇹 意大利 米兰 2
+      - 🇱🇺 卢森堡 1
+      - 🇱🇺 卢森堡 2
+      - 🇱🇺 卢森堡 3
+      - 🇱🇻 拉脱维亚 里加 1
+      - 🇸🇪 瑞典 斯德哥尔摩 1
+      - 🇵🇰 巴基斯坦 1
+      - 🇵🇰 巴基斯坦 2
+      - 🇵🇰 巴基斯坦 3
+      - 🇵🇰 巴基斯坦 4
+      - 🇵🇰 巴基斯坦 5
+      - 🇵🇰 巴基斯坦 6
+      - 🇸🇬 新加坡 1
+      - 🇸🇬 新加坡 亚马逊云 1
   - name: Apple
     type: select
     proxies:
@@ -548,100 +1021,174 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇨🇳🇭🇰 中国香港腾讯云
-      - 🇨🇳🇹🇼 中国台湾台中中華電信
-      - 🇷🇺 俄罗斯莫斯科
-      - 🇷🇺 俄罗斯车里雅宾斯克
-      - 🇯🇵 日本东京
-      - 🇺🇸 美国
-      - 🇺🇸 美国纽约纽约市 1
-      - 🇺🇸 美国纽约纽约市 2
-      - 🇺🇸 美国德克萨斯达拉斯 1
-      - 🇺🇸 美国德克萨斯达拉斯 2
-      - 🇺🇸 美国乔治亚亚特兰大 1
-      - 🇺🇸 美国乔治亚亚特兰大 2
-      - 🇺🇸 美国加利福尼亚洛杉矶 1
-      - 🇺🇸 美国加利福尼亚洛杉矶 2
-      - 🇺🇸 美国加利福尼亚洛杉矶 3
-      - 🇺🇸 美国堪萨斯欧弗兰帕克 1
-      - 🇺🇸 美国堪萨斯欧弗兰帕克 2
-      - 🇺🇸 美国弗吉尼亚阿什本亚马逊云
-      - 🇺🇸 美国加利福尼亚洛杉矶Cloudradium
-      - 🇨🇦 加拿大基奇纳
-      - 🇨🇦 加拿大魁北克博阿努瓦OVH
-      - 🇳🇱 荷兰
-      - 🇳🇱 荷兰哈勒姆
-      - 🇳🇱 荷兰阿姆斯特丹 1
-      - 🇳🇱 荷兰阿姆斯特丹 2
-      - 🇳🇱 荷兰阿姆斯特丹 3
-      - 🇳🇱 荷兰阿姆斯特丹 4
-      - 🇳🇱 荷兰阿姆斯特丹 5
-      - 🇳🇱 荷兰阿姆斯特丹 6
-      - 🇳🇱 荷兰阿姆斯特丹 7
-      - 🇳🇱 荷兰阿姆斯特丹 8
-      - 🇳🇱 荷兰阿姆斯特丹 9
-      - 🇳🇱 荷兰阿姆斯特丹 10
-      - 🇳🇱 荷兰阿姆斯特丹 11
-      - 🇩🇪 德国法兰克福亚马逊云
-      - 🇬🇧 英国
-      - 🇪🇸 西班牙
-      - 🇳🇿 新西兰
-      - 🇦🇺 澳大利亚新南威尔士悉尼
-      - 🇦🇺 澳大利亚昆士兰布里斯班
-      - 🇦🇺 澳大利亚维多利亚墨尔本
-      - 🇦🇺 澳大利亚南澳大利亚阿德莱德 1
-      - 🇦🇺 澳大利亚南澳大利亚阿德莱德 2
+      - 🇨🇳🇹🇼 中国 台湾 1
+      - 🇨🇳🇭🇰 中国 香港 1
+      - 🇨🇳🇭🇰 中国 香港 微软云 1
+      - 🇨🇳🇭🇰 中国 香港 微软云 2
+      - 🇺🇸 美国 密歇根 1
+      - 🇺🇸 美国 密歇根 2
+      - 🇺🇸 美国 乔治亚 1
+      - 🇺🇸 美国 乔治亚 亚特兰大 1
+      - 🇺🇸 美国 乔治亚 亚特兰大 2
+      - 🇺🇸 美国 乔治亚 亚特兰大 3
+      - 🇺🇸 美国 加利福尼亚 洛杉矶 1
+      - 🇺🇸 美国 加利福尼亚 洛杉矶 2
+      - 🇺🇸 美国 加利福尼亚 洛杉矶 3
+      - 🇺🇸 美国 德克萨斯 休斯顿 1
+      - 🇺🇸 美国 弗吉尼亚 阿什本 1
+      - 🇺🇸 美国 内华达 拉斯维加斯 1
+      - 🇺🇸 美国 堪萨斯欧 弗兰帕克 1
+      - 🇺🇸 美国 俄勒冈 波特兰 亚马逊云 1
+      - 🇺🇸 美国 德克萨斯 达拉斯 Linode 1
+      - 🇺🇸 美国 亚利桑那 凤凰城 GoDaddy 1
+      - 🇺🇸 美国 亚利桑那 凤凰城 GoDaddy 2
+      - 🇷🇺 俄罗斯 1
+      - 🇷🇺 俄罗斯 莫斯科 1
+      - 🇷🇺 俄罗斯 莫斯科 2
+      - 🇪🇺 欧洲 1
+      - 🇬🇧 英国 1
+      - 🇬🇧 英国 2
+      - 🇬🇧 英国 3
+      - 🇬🇧 英国 4
+      - 🇬🇧 英国 5
+      - 🇬🇧 英国 英格兰 伦敦 1
+      - 🇬🇧 英国 英格兰 伦敦 2
+      - 🇬🇧 英国 英格兰 伦敦 3
+      - 🇬🇧 英国 英格兰 曼彻斯特 1
+      - 🇩🇪 德国 1
+      - 🇩🇪 德国 2
+      - 🇩🇪 德国 法兰克福 1
+      - 🇩🇪 德国 法兰克福 2
+      - 🇩🇪 德国 法兰克福 3
+      - 🇩🇪 德国 法兰克福 4
+      - 🇩🇪 德国 法兰克福 5
+      - 🇩🇪 德国 法兰克福 6
+      - 🇩🇪 德国 法兰克福 7
+      - 🇩🇪 德国 法兰克福 8
+      - 🇩🇪 德国 法兰克福 9
+      - 🇩🇪 德国 纽伦堡 1
+      - 🇨🇦 加拿大 基奇纳 1
+      - 🇨🇦 加拿大 基奇纳 2
+      - 🇨🇦 加拿大 基奇纳 3
+      - 🇨🇦 加拿大 基奇纳 4
+      - 🇨🇦 加拿大 基奇纳 5
+      - 🇨🇦 加拿大 多伦多 1
+      - 🇨🇦 加拿大 魁北克博 阿努瓦 OVH 1
+      - 🇫🇷 法国 马赛 1
+      - 🇫🇷 法国 马赛 2
+      - 🇫🇷 法国 马赛 3
+      - 🇦🇺 澳大利亚 新南威尔士 悉尼 1
+      - 🇦🇹 奥地利 维也纳 1
+      - 🇵🇱 波兰 西里西亚 1
+      - 🇧🇦 波黑 1
+      - 🇧🇦 波黑 2
       - 🇧🇪 比利时 1
-      - 🇧🇪 比利时 2
-      - 🇧🇪 比利时 3
-      - 🇧🇪 比利时 4
-      - 🇧🇪 比利时 5
-      - 🇧🇪 比利时 6
-      - 🇧🇪 比利时 7
-      - 🇧🇪 比利时 8
+      - 🇮🇷 伊朗 1
+      - 🇷🇴 罗马尼亚 1
+      - 🇷🇴 罗马尼亚 2
+      - 🇷🇴 罗马尼亚 3
+      - 🇷🇴 罗马尼亚 4
+      - 🇷🇴 罗马尼亚 5
+      - 🇷🇴 罗马尼亚 6
+      - 🇷🇴 罗马尼亚 7
+      - 🇷🇴 罗马尼亚 8
+      - 🇷🇴 罗马尼亚 9
+      - 🇷🇴 罗马尼亚 10
+      - 🇷🇴 罗马尼亚 11
+      - 🇷🇴 罗马尼亚 布加勒斯特 1
+      - 🇷🇴 罗马尼亚 布加勒斯特 2
+      - 🇷🇴 罗马尼亚 布加勒斯特 3
+      - 🇷🇴 罗马尼亚 布加勒斯特 4
+      - 🇷🇴 罗马尼亚 布加勒斯特 5
+      - 🇷🇴 罗马尼亚 布加勒斯特 6
+      - 🇷🇴 罗马尼亚 布加勒斯特 7
+      - 🇷🇴 罗马尼亚 布加勒斯特 8
+      - 🇷🇴 罗马尼亚 布加勒斯特 9
+      - 🇷🇴 罗马尼亚 布加勒斯特 10
+      - 🇳🇱 荷兰 1
+      - 🇳🇱 荷兰 2
+      - 🇳🇱 荷兰 3
+      - 🇳🇱 荷兰 4
+      - 🇳🇱 荷兰 5
+      - 🇳🇱 荷兰 阿姆斯特丹 1
+      - 🇳🇱 荷兰 阿姆斯特丹 2
+      - 🇳🇱 荷兰 阿姆斯特丹 3
+      - 🇳🇱 荷兰 阿姆斯特丹 4
+      - 🇳🇱 荷兰 阿姆斯特丹 5
+      - 🇭🇷 克罗地亚 1
+      - 🇭🇷 克罗地亚 2
+      - 🇭🇷 克罗地亚 3
+      - 🇭🇷 克罗地亚 4
+      - 🇮🇳 印度 1
+      - 🇮🇳 印度 2
+      - 🇮🇳 印度 3
+      - 🇮🇳 印度 4
+      - 🇮🇳 印度 5
+      - 🇮🇳 印度 6
+      - 🇮🇳 印度 7
+      - 🇮🇳 印度 8
+      - 🇮🇳 印度 9
+      - 🇮🇳 印度 印多尔 1
+      - 🇮🇳 印度 印多尔 2
+      - 🇮🇳 印度 班加罗尔 1
+      - 🇮🇳 印度 班加罗尔 2
+      - 🇮🇹 意大利 米兰 1
+      - 🇮🇹 意大利 米兰 2
+      - 🇱🇺 卢森堡 1
+      - 🇱🇺 卢森堡 2
+      - 🇱🇺 卢森堡 3
+      - 🇱🇻 拉脱维亚 里加 1
+      - 🇸🇪 瑞典 斯德哥尔摩 1
+      - 🇵🇰 巴基斯坦 1
+      - 🇵🇰 巴基斯坦 2
+      - 🇵🇰 巴基斯坦 3
+      - 🇵🇰 巴基斯坦 4
+      - 🇵🇰 巴基斯坦 5
+      - 🇵🇰 巴基斯坦 6
+      - 🇸🇬 新加坡 1
+      - 🇸🇬 新加坡 亚马逊云 1
   - name: HK
+    type: select
     proxies:
-      - 🇨🇳🇭🇰 中国香港腾讯云
+      - 🇨🇳🇭🇰 中国 香港 1
+      - 🇨🇳🇭🇰 中国 香港 微软云 1
+      - 🇨🇳🇭🇰 中国 香港 微软云 2
+  - name: SG
+    type: select
+    proxies:
+      - 🇸🇬 新加坡 1
+      - 🇸🇬 新加坡 亚马逊云 1
+  - name: TW
+    type: select
+    proxies:
+      - 🇨🇳🇹🇼 中国 台湾 1
+  - name: JP
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 600
-  - name: SG
     proxies:
       - DIRECT
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 600
-  - name: TW
-    proxies:
-      - 🇨🇳🇹🇼 中国台湾台中中華電信
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 600
-  - name: JP
-    proxies:
-      - 🇯🇵 日本东京
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 600
   - name: US
-    proxies:
-      - 🇺🇸 美国
-      - 🇺🇸 美国纽约纽约市 1
-      - 🇺🇸 美国纽约纽约市 2
-      - 🇺🇸 美国德克萨斯达拉斯 1
-      - 🇺🇸 美国德克萨斯达拉斯 2
-      - 🇺🇸 美国乔治亚亚特兰大 1
-      - 🇺🇸 美国乔治亚亚特兰大 2
-      - 🇺🇸 美国加利福尼亚洛杉矶 1
-      - 🇺🇸 美国加利福尼亚洛杉矶 2
-      - 🇺🇸 美国加利福尼亚洛杉矶 3
-      - 🇺🇸 美国堪萨斯欧弗兰帕克 1
-      - 🇺🇸 美国堪萨斯欧弗兰帕克 2
-      - 🇺🇸 美国弗吉尼亚阿什本亚马逊云
-      - 🇺🇸 美国加利福尼亚洛杉矶Cloudradium
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 600
+    proxies:
+      - 🇺🇸 美国 密歇根 1
+      - 🇺🇸 美国 密歇根 2
+      - 🇺🇸 美国 乔治亚 1
+      - 🇺🇸 美国 乔治亚 亚特兰大 1
+      - 🇺🇸 美国 乔治亚 亚特兰大 2
+      - 🇺🇸 美国 加利福尼亚 洛杉矶 1
+      - 🇺🇸 美国 加利福尼亚 洛杉矶 2
+      - 🇺🇸 美国 加利福尼亚 洛杉矶 3
+      - 🇺🇸 美国 德克萨斯 休斯顿 1
+      - 🇺🇸 美国 弗吉尼亚 阿什本 1
+      - 🇺🇸 美国 内华达 拉斯维加斯 1
+      - 🇺🇸 美国 堪萨斯欧 弗兰帕克 1
+      - 🇺🇸 美国 俄勒冈 波特兰 亚马逊云 1
+      - 🇺🇸 美国 德克萨斯 达拉斯 Linode 1
+      - 🇺🇸 美国 亚利桑那 凤凰城 GoDaddy 1
+      - 🇺🇸 美国 亚利桑那 凤凰城 GoDaddy 2
 rules:
   - DOMAIN-SUFFIX,17gouwuba.com,REJECT
   - DOMAIN-SUFFIX,186078.com,REJECT
