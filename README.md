@@ -53,6 +53,8 @@
 ```yaml
 rules:
   - DOMAIN,tencentcs.com,DIRECT # 腾讯云
+  - DOMAIN,pufei.org,DIRECT # 扑飞漫画
+  - DOMAIN-SUFFIX,res.img.jituoli.com,DIRECT # 扑飞漫画图床
 ```
 
 ## 配置文件链接
